@@ -1,15 +1,16 @@
 # saaransh
 
-**Single-vector multimodal retrieval bench — ColQwen2 + MUVERA vs Gemma 4 12B pooled, on a 32 GB Mac.**
+**Single-vector multimodal document retrieval bench — how much late-interaction quality survives when you collapse a page to one vector? Runs on a 32 GB MacBook.**
 
-A head-to-head harness for one question: if you collapse a late-interaction model
-(ColQwen2) to a single vector with MUVERA, how does it compare — on retrieval
-quality *and* on storage/latency — to using a generative encoder-free VLM
-(Gemma 4 12B) as a zero-shot single-vector embedder?
+Three retrievers, one corpus, one set of metrics:
 
-Both pipelines emit exactly **one** dense vector per page, drop into the same flat
-index, and are scored with the same metrics, so the comparison is about
-representation, not infrastructure.
+- **ColQwen2 MaxSim** — full late interaction. The quality *ceiling*.
+- **ColQwen2 + MUVERA** — the same patch bag collapsed to one vector. The *bridge*.
+- **Gemma 4 12B pooled** — a generative, encoder-free VLM used as a zero-shot embedder. The *control*.
+
+All three score through the same index and metrics, so the comparison is about
+representation, not infrastructure. Headline finding: **the embedding has to be trained
+to be an embedding** — see [Results](#results).
 
 ## The name
 
@@ -23,9 +24,9 @@ gist that's left after the collapse.
 
 Three retrievers, same corpus and metrics:
 
-**Baseline — ColQwen2 exact MaxSim.** Keeps the full ~1000-vector bag per page and scores
-with native late interaction (`processor.score_multi_vector`). The **quality ceiling** and
-the fat end of the storage axis (~0.5 MB/page). It answers the question that makes the whole
+**Baseline — ColQwen2 exact MaxSim.** Keeps the full ~750-vector bag per page and scores
+with native late interaction (`processor.score_retrieval`). The **quality ceiling** and
+the fat end of the storage axis (~385 KB/page). It answers the question that makes the whole
 comparison meaningful: how much retrieval quality does collapsing to a single vector cost?
 
 **Pipeline 1 — ColQwen2 + MUVERA.** The same patch bag collapsed by
@@ -83,26 +84,30 @@ Pass `--local-only` to forbid network fetches. The loader sets the MPS flags
 #   {"query": "What is Scaled Dot-Product Attention?", "image": "attention_p3"}
 saaransh-demo --corpus ./sample_docs
 
-# All three arms (add the MaxSim ceiling), offline against your cached ColQwen2
-saaransh-demo --corpus ./sample_docs --maxsim --local-only --cache-dir ./model_cache
+# All three arms on a ViDoRe subset (run separately on 32 GB to avoid co-resident models)
+saaransh-demo --only maxsim   --vidore vidore/docvqa_test_subsampled --limit 200 \
+  --colqwen-model ./model_cache/colqwen2-v1.0-hf
+saaransh-demo --only colqwen2 --vidore vidore/docvqa_test_subsampled --limit 200 \
+  --colqwen-model ./model_cache/colqwen2-v1.0-hf --muvera-mode calibrated_eigenbasis --k 6 --reps 8
+saaransh-demo --only gemma    --vidore vidore/docvqa_test_subsampled --limit 200 \
+  --gemma-model ./model_cache/gemma-4-12b-it --pooling image
 
-# ViDoRe subset, both pipelines
-saaransh-demo --vidore vidore/docvqa_test_subsampled --limit 200
-
-# MUVERA with the calibrated eigenbasis mode (your SpectralQuant-inspired Mode 5)
-saaransh-demo --corpus ./sample_docs --muvera-mode calibrated_eigenbasis --k 6
-
-# The headline experiment: retrieval quality vs Gemma weight precision
-saaransh-sweep --vidore vidore/docvqa_test_subsampled --limit 200 --precisions bf16,q8,q4
+# The MUVERA frontier: cache ColQwen2 bags once (~250 s), then sweep configs in seconds each
+saaransh-cache       --vidore vidore/docvqa_test_subsampled --limit 200 \
+  --colqwen-model ./model_cache/colqwen2-v1.0-hf --out ./cache/docvqa200
+saaransh-muvera-sweep --cache ./cache/docvqa200 --ceiling \
+  --modes default_identity,calibrated_eigenbasis --k 4,6,8 --reps 4,8 \
+  --compress none,32768,8192,2048 --plot frontier.png
 ```
 
-Example table:
+Example output (DocVQA-200, all three arms):
 
 ```
-pipeline                             dim    B/doc  recall@1  recall@5    ndcg@5    mrr@10   idx s   qry s
-------------------------------------------------------------------------------------------------------------
-colqwen2+muvera[DEFAULT_IDENTITY]   8192    32768     ...       ...        ...       ...      ...     ...
-gemma4-12b[transformers/bf16/mean]  3840    15360     ...       ...        ...       ...      ...     ...
+pipeline                             dim    B/doc  recall@1  recall@5    ndcg@5    mrr@10
+-----------------------------------------------------------------------------------------
+colqwen2-maxsim (ceiling)            128   385249     0.565     0.735     0.660     0.642
+colqwen2+muvera[CALIBRATED]         8192    32768     0.320     0.530     0.430     0.392
+gemma4-12b[transformers/bf16/mean]  3840    15360     0.010     0.045     0.028     0.024
 ```
 
 ## Index backends
@@ -129,42 +134,66 @@ saaransh-demo --vidore vidore/docvqa_test_subsampled --limit 500 \
   --index ivfpq --fde-compress 1024 --pq-m 16 --nlist 256 --nprobe 32
 ```
 
-## Status: no real documents tested yet
+## Results
 
-The committed tests run on **synthetic data only** — random multi-vector bags through the
-real pymuvera encoder, plus FAISS flat/IVFPQ parity checks — and confirm the wiring
-(scoring, index, metrics) is correct. **No ColQwen2 / Gemma forward pass and no real page
-image has been run.** The ViDoRe and local-corpus loaders are wired but unexecuted. The
-first empirical retrieval numbers come from running this on your Mac; nothing here is a
-benchmark.
+On a 200-page DocVQA subsample (ViDoRe), one relevant page per query, bf16 on Apple Silicon:
 
-## What you verify on device
+| arm | nDCG@5 | R@1 | R@5 | bytes/page | % of ceiling |
+|---|---|---|---|---|---|
+| ColQwen2 MaxSim (ceiling) | **0.660** | 0.565 | 0.735 | ~385 KB | 100% |
+| ColQwen2 + MUVERA (calibrated, 32 KB) | 0.430 | 0.320 | 0.530 | 32 KB | 65% |
+| Gemma 4 12B pooled | 0.028 | 0.010 | 0.045 | 15 KB | 4% |
 
-**First run — Gemma 4 bring-up.** Download the instruct weights (Apache-2.0; if `hf
-download` 401s, accept the license on the model page then `hf auth login`):
+The MUVERA storage/quality frontier (best nDCG@5 achievable at each storage budget):
+
+| storage/page | best config | nDCG@5 | % of ceiling |
+|---|---|---|---|
+| 32 KB | calibrated, k4/r4 | 0.430 | 65% |
+| 128 KB | calibrated, k6/r4 | 0.475 | 72% |
+| 512 KB | calibrated, k8/r4 | 0.507 | 77% |
+| 1 MB | calibrated, k8/r8 | 0.533 | 81% |
+
+What it shows:
+
+- **MUVERA is a real but lossy bridge** — ~65% of late-interaction quality at ~12×
+  compression, in one ANN-friendly vector. It never reaches parity: even uncompressed
+  (1 MB/page) it tops out at 81%, so its value is the small-storage regime, not the high end.
+- **Calibration owns the frontier.** `CALIBRATED_EIGENBASIS` beats the default SimHash
+  construction at every storage level; and a compact FDE built directly beats a large one
+  projected down to the same size.
+- **A generative VLM is not a zero-shot retriever.** Gemma 4 12B reads documents well, but
+  its pooled hidden states sit at chance across mean / last-token / image-only pooling —
+  nothing trained its activations into a comparable query/document space.
+
+The thesis: *the embedding has to be trained to be an embedding.* MUVERA compresses an
+already-trained retrieval signal and degrades gracefully because there's real structure to
+preserve; a generative decoder has none to compress.
+
+Reproduce the frontier: `saaransh-cache` once, then `saaransh-muvera-sweep --ceiling --plot frontier.png`.
+
+**Scope:** one dataset, 200 examples, one-gold-page relevance. A consistent yardstick across
+methods and a directional result — not a leaderboard claim. The committed tests run on
+synthetic data (real pymuvera scoring, FAISS parity); the numbers above come from real runs.
+
+## Running the models (offline)
+
+Download the merged checkpoints once, then point `--colqwen-model` / `--gemma-model` at the
+local folders and pass `--local-only` to run without network:
 
 ```bash
-hf download google/gemma-4-12b-it --local-dir ./model_cache/gemma-4-12b-it
+hf download vidore/colqwen2-v1.0-hf --local-dir ./model_cache/colqwen2-v1.0-hf
+hf download google/gemma-4-12b-it    --local-dir ./model_cache/gemma-4-12b-it
 ```
 
-Then run the probe — it loads Gemma alone (fits bf16 in 32 GB), pushes one image
-through, and prints the hidden-state contract the embedder depends on:
+ColQwen2 (`ColQwen2ForRetrieval`) and Gemma 4 (`AutoModelForMultimodalLM`) both load on one
+transformers-5.x environment; the loader sets the MPS flags for you. On 32 GB, run the arms
+in separate invocations so you never hold Gemma (~24 GB bf16) and ColQwen2 at once.
 
-```bash
-HF_HUB_OFFLINE=1 python scripts/probe_gemma.py \
-  --model ./model_cache/gemma-4-12b-it --image ./sample_docs/page.png
-```
-
-(Pass the `--local-dir` folder as `--model` — `from_pretrained` takes a path directly, so
-no hub-cache layout and no re-download. `--offline`/`HF_HUB_OFFLINE=1` forbids any fetch.)
-
-The embedder is pre-aligned to the official card API (`AutoModelForMultimodalLM` with an
-`AutoModelForImageTextToText` fallback, image-before-text, `enable_thinking=False`,
-per-item processing). The probe confirms the class, where `hidden_size` lives, and the
-last-layer shape. The remaining `# VERIFY` is MLX hidden-state extraction in
-`gemma4_pooled._mlx_hidden` — only needed once you move to the q4/q8 sweep; the
-transformers bf16 path is the working baseline. Run the arms in separate invocations on
-32 GB so you never hold Gemma (~24 GB bf16) and ColQwen2 at once.
+`scripts/probe_gemma.py` loads Gemma alone and prints its hidden-state contract — handy if a
+future transformers bump shifts the API. The one path still marked `# VERIFY` is MLX
+hidden-state extraction (`gemma4_pooled._mlx_hidden`), needed only for the q4/q8
+weight-precision sweep; the transformers bf16/fp16 path is the verified baseline behind all
+the numbers above.
 
 ## 32 GB memory budget (Gemma 4 12B)
 
