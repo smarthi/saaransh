@@ -1,0 +1,63 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "saaransh"
+version = "0.1.0"
+description = "Single-vector multimodal retrieval bench: ColQwen2+MUVERA vs Gemma 4 12B pooled, on a 32 GB Mac"
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Apache-2.0" }
+authors = [{ name = "Suneel Marthi" }]
+dependencies = [
+    "numpy>=1.24",
+    "pymuvera>=0.4.2",
+    "pydantic>=2.0",
+    "tqdm>=4.66",
+]
+
+# Backends are optional so the core (index/eval/MUVERA glue) installs and tests
+# without dragging in torch. Install only what your machine needs.
+[project.optional-dependencies]
+colqwen2 = [
+    "torch>=2.4",
+    "torchvision>=0.19",
+    "transformers>=5.3",   # native ColQwen2ForRetrieval; no colpali-engine needed
+    "pillow>=10.0",
+]
+gemma = [
+    "torch>=2.4",
+    "torchvision>=0.19",
+    "transformers>=5.3",   # Gemma 4 (AutoModelForMultimodalLM) needs transformers 5.x
+    "accelerate>=0.30",
+    "pillow>=10.0",
+]
+# Apple-Silicon quantized path for the Gemma weight-precision sweep (Mac only).
+mlx = [
+    "mlx>=0.18",
+    "mlx-vlm>=0.6",
+    "pillow>=10.0",
+]
+faiss = ["faiss-cpu>=1.8"]
+pdf = ["pymupdf>=1.24", "pillow>=10.0"]
+vidore = ["datasets>=2.18"]
+plot = ["matplotlib>=3.8"]
+dev = ["pytest>=8.0", "ruff>=0.4"]
+
+[project.scripts]
+saaransh-demo = "saaransh.cli:demo_main"
+saaransh-sweep = "saaransh.cli:sweep_main"
+saaransh-cache = "saaransh.cli:cache_main"
+saaransh-muvera-sweep = "saaransh.cli:muvera_sweep_main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/saaransh"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

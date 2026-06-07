@@ -1,0 +1,10 @@
+{"query": "What is Scaled Dot-Product Attention?", "image": "attention_p3"}
+{"query": "How many layers are in the Encoder stack?", "image": "attention_p2"}
+{"query": "What is the purpose of the Multi-Head Attention mechanism?", "image": "attention_p3"}
+{"query": "What are the main components of the Transformer architecture?", "image": "attention_p1"}
+{"query": "How does the Transformer handle sequential data without using recurrent connections?", "image": "attention_p1"}
+{"query": "What is the role of positional encoding in the Transformer model?", "image": "attention_p1"}
+{"query": "How does the Transformer model achieve parallelization during training?", "image": "attention_p1"}
+{"query": "What are the advantages of using self-attention in the Transformer architecture?", "image": "attention_p2"}
+{"query": "How does the Transformer model differ from traditional RNN-based models for sequence processing?", "image": "attention_p1"}
+{"query": "What is the significance of the 'Scaled' aspect in Scaled Dot-Product Attention?", "image": "attention_p3"}
