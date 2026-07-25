@@ -100,9 +100,13 @@ arxivqa.** Only arxivqa had enough color-referencing queries (n=17) to clear the
 threshold; docvqa (n=2) and infovqa (n=4) were excluded from the pool as too few, and tabfquad had
 zero such queries. So "has_color is harder for MUVERA" is not a cross-dataset finding — it is an
 arxivqa finding, full stop, and should be reported as such rather than "confirmed across datasets."
-`has_digit`, which had excluded zero in two individual datasets (arxivqa and infovqa, in opposite
-directions from each other), does **not** exclude zero once pooled — those two effects cancel out
-rather than reinforcing each other. The composite `specific_entity_lookup` vs `descriptive_general`
+`has_digit` is different: arxivqa (−0.49) and infovqa (−0.52) individually exclude zero in the
+*same* direction — digit-containing queries are easier for MUVERA in both, a real, replicated
+effect on its own terms. But this does not generalize across all four domains: tabfquad's point
+estimate points the opposite way (+0.50, not itself significant) and docvqa sits near zero (−0.03),
+and pooling all four in washes out the arxivqa/infovqa signal rather than confirming it. This is a
+domain-conditional effect, not a universal MUVERA property — the arxivqa/infovqa result isn't
+noise, it just doesn't hold everywhere. The composite `specific_entity_lookup` vs `descriptive_general`
 bucket still does not exclude zero even with full pooled power (358 vs 442 rows). **The honest
 mechanism-level finding from this run is: `has_color` is harder for MUVERA in arxivqa; nothing else
 in the structural-feature set survives pooling.** That is a narrower claim than "specific-entity
