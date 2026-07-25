@@ -20,12 +20,55 @@ from saaransh.cache import load_cache, maxsim_score
 from saaransh.eval import evaluate_per_query
 from saaransh.index import FlatIndex
 
-QUESTION_WORDS = ("what", "how", "why", "who", "which", "where", "when", "does", "is", "are")
+# Replaces the old first-word-only bucketing. That heuristic (a) only recognized
+# English question words, so it degenerated to a single "other" bucket on the
+# French tabfquad queries, and (b) wasn't the axis the actual worst-N regressions
+# split on anyway — reading those by eye, the split is "asks for one small localized
+# detail" (a number, a contact field, a color, a named/quoted thing) vs. "asks a
+# broad descriptive/inferential question about the page." These features are
+# structural (digits, @, a closed-class color list, capitalization/quoting) rather
+# than reverse-engineered from the specific failing queries, so they're a testable
+# hypothesis rather than a description of the sample used to build it.
+COLOR_WORDS = (
+    # English
+    "red", "blue", "green", "yellow", "black", "white", "orange", "purple",
+    "pink", "gray", "grey", "brown", "cyan", "magenta", "violet",
+    # French
+    "rouge", "bleu", "bleue", "vert", "verte", "jaune", "noir", "noire",
+    "blanc", "blanche", "violette", "rose", "gris", "grise", "brun", "marron",
+)
+_COLOR_RE = re.compile(r"\b(" + "|".join(COLOR_WORDS) + r")\b", re.IGNORECASE)
+_DIGIT_RE = re.compile(r"\d")
+_QUOTED_OR_ACRONYM_RE = re.compile(r"'[^']{2,40}'|\"[^\"]{2,40}\"|\b[A-Z]{2,}\b")
+
+# Weaker signal than the four above: this is a small closed-class keyword list
+# (contact/identifier nouns) rather than a purely structural feature, because a
+# query can ask ABOUT an email/handle without containing a literal "@". Keep it
+# as its own flag in the report rather than folding it silently into
+# has_at — it's closer to reading the failures than the structural features are,
+# so treat it as exploratory, not primary evidence.
+IDENTIFIER_NOUNS = (
+    "email", "e-mail", "courriel", "handle", "username", "phone number",
+    "telephone", "téléphone", "adresse email", "adresse e-mail",
+)
+_IDENTIFIER_RE = re.compile("|".join(re.escape(w) for w in IDENTIFIER_NOUNS), re.IGNORECASE)
 
 
-def query_bucket(q: str) -> str:
-    first = re.sub(r"[^a-z]", "", q.strip().lower().split(" ")[0])
-    return first if first in QUESTION_WORDS else "other"
+def query_features(q: str) -> dict[str, bool]:
+    has_digit = bool(_DIGIT_RE.search(q))
+    has_at = "@" in q
+    has_color = bool(_COLOR_RE.search(q))
+    has_quoted_or_acronym = bool(_QUOTED_OR_ACRONYM_RE.search(q))
+    has_identifier_noun = bool(_IDENTIFIER_RE.search(q))
+    specific_entity = has_digit or has_at or has_color or has_quoted_or_acronym or has_identifier_noun
+    return {
+        "has_digit": has_digit,
+        "has_at": has_at,
+        "has_color": has_color,
+        "has_quoted_or_acronym": has_quoted_or_acronym,
+        "has_identifier_noun": has_identifier_noun,
+        "bucket": "specific_entity_lookup" if specific_entity else "descriptive_general",
+    }
 
 
 def main() -> None:
@@ -79,23 +122,28 @@ def main() -> None:
         c, m = ceil_pq[qi], mu_pq[qi]
         c_rank = c["gold_rank"] if c["gold_rank"] is not None else 11  # outside top-10
         m_rank = m["gold_rank"] if m["gold_rank"] is not None else 11
+        feats = query_features(q)
         rows.append({
             "qi": qi,
             "query": q,
             "n_words": len(q.split()),
-            "bucket": query_bucket(q),
+            **feats,
             "ceiling_rank": c["gold_rank"],
             "muvera_rank": m["gold_rank"],
             "rank_delta": m_rank - c_rank,  # >0 = MUVERA did worse than ceiling
             "ceiling_ok_muvera_lost": c_rank == 1 and m_rank > 1,
         })
 
+    feature_cols = ["has_digit", "has_at", "has_color", "has_quoted_or_acronym",
+                    "has_identifier_noun", "bucket"]
     with open(args.out, "w") as f:
-        f.write("qi,query,n_words,bucket,ceiling_rank,muvera_rank,rank_delta,ceiling_ok_muvera_lost\n")
+        f.write("qi,query,n_words," + ",".join(feature_cols)
+                 + ",ceiling_rank,muvera_rank,rank_delta,ceiling_ok_muvera_lost\n")
         for r in rows:
             q_escaped = r["query"].replace('"', "'")
+            feat_vals = ",".join(str(r[c]) for c in feature_cols)
             f.write(
-                f'{r["qi"]},"{q_escaped}",{r["n_words"]},{r["bucket"]},'
+                f'{r["qi"]},"{q_escaped}",{r["n_words"]},{feat_vals},'
                 f'{r["ceiling_rank"]},{r["muvera_rank"]},{r["rank_delta"]},{r["ceiling_ok_muvera_lost"]}\n'
             )
     print(f"wrote {args.out}  ({len(rows)} queries)")
@@ -107,9 +155,18 @@ def main() -> None:
     by_bucket: dict[str, list[int]] = {}
     for r in rows:
         by_bucket.setdefault(r["bucket"], []).append(r["rank_delta"])
-    print("\navg rank_delta by first-word bucket (higher = MUVERA relatively worse):")
+    print("\navg rank_delta: specific-entity-lookup vs descriptive-general "
+          "(higher = MUVERA relatively worse):")
     for b, deltas in sorted(by_bucket.items(), key=lambda kv: -np.mean(kv[1])):
-        print(f"  {b:<8} n={len(deltas):<4} avg_delta={np.mean(deltas):+.2f}")
+        print(f"  {b:<22} n={len(deltas):<4} avg_delta={np.mean(deltas):+.2f}")
+
+    print("\nsame split, by individual structural feature (not mutually exclusive):")
+    for feat in ("has_digit", "has_at", "has_color", "has_quoted_or_acronym", "has_identifier_noun"):
+        with_feat = [r["rank_delta"] for r in rows if r[feat]]
+        without_feat = [r["rank_delta"] for r in rows if not r[feat]]
+        if with_feat and without_feat:
+            print(f"  {feat:<22} n={len(with_feat):<4} avg_delta={np.mean(with_feat):+.2f}"
+                  f"   (without: n={len(without_feat):<4} avg_delta={np.mean(without_feat):+.2f})")
 
     lengths = np.array([r["n_words"] for r in rows])
     deltas = np.array([r["rank_delta"] for r in rows])

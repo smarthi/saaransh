@@ -1,201 +1,201 @@
-qi,query,n_words,bucket,ceiling_rank,muvera_rank,rank_delta,ceiling_ok_muvera_lost
-0,"Quelles étaient les principales composantes du bénéfice net par action d'une entreprise pour les années 2016 et 2017?",18,other,1,3,2,True
-1,"Comment les activités opérationnelles, d'investissement et de financement affectent-elles la trésorerie d'une entreprise au cours de différentes périodes?",18,other,None,None,0,False
-2,"Quels sont les champs typiques et leur signification dans une base de données d'exercices financiers d'une collectivité ?",18,other,4,9,5,False
-3,"Comment a évolué le résultat net des sociétés consolidées dans le secteur aérien entre 2011 et 2012?",17,other,7,None,4,False
-4,"Quel est l'impact des provisions sur le résultat d'exploitation dans l'industrie aéronautique récemment ?",14,other,2,4,2,False
-5,"Combien de personnes sont employées à entretenir les chambres funéraires en Normandie ?",13,other,1,1,0,False
-6,"quelle est la moyenne des dépenses par secteur en 2008 ?",11,other,None,None,0,False
-7,"Quels sont les taux de croissance annuels moyens du transport routier de voyageurs pour la période 2013-2008 ?",18,other,2,3,1,False
-8,"En 2011, quelle est la part des revenus de l'activité cargo de KLM qui concerne des destinations en Afrique ou au Moyen-Orient ou en Asie?",25,other,1,3,2,True
-9,"Combien de trimestres le trafic intérieur est-il supérieur à 4,5 en 2020 ?",13,other,2,1,-1,False
-10,"Quel est le revenu total du groupe KLM en cargo sur l'année financière 2011 seulement ? ",16,other,3,3,0,False
-11,"Quel est l'écart relatif des coûts du socle fonctionnel entre les prévisions 2017 et la somme réalisé la même année ? ",21,other,1,2,1,True
-12,"Quelle est la méthodologie de calcul du résultat exceptionnel comptable pour une entreprise?",13,other,3,2,-1,False
-13,"Quelle est la fréquence des séances de conte destinées aux écoles maternelles et primaires tout au long de l'année ?",20,other,1,1,0,False
-14,"Quels types de train circulent à la Gare de Bercy et à quelle vitesse?",14,other,3,2,-1,False
-15,"Y a-t-il des projets de développement ou de fermeture pour de nouvelles installations de traitement des déchets en France récemment ?",21,other,4,2,-2,False
-16,"Quels sont les chiffres de la population municipale pour les grandes villes françaises ?",14,other,3,3,0,False
-17,"Quelle part de la surface des forêts Natura 2000 est domaniale?",11,other,1,4,3,True
-18,"Quelle a été l'évolution du nombre moyen pondéré d'actions ordinaires en circulation entre 2005 et 2006 ?",17,other,None,None,0,False
-19,"Quel était le CA des activités de construction au T1 2021 ?",12,other,2,2,0,False
-20,"Quelles étaient les valeurs des actifs financiers disponibles à la vente au 31 décembre 2011 ?",16,other,4,None,7,False
-21,"Quel impact ont les taux de change sur les équivalents de trésorerie d'une entreprise au fil du temps?",18,other,None,None,0,False
-22,"Quel est l'impact d'une augmentation du taux d'actualisation sur les flux de trésorerie futurs?",14,other,1,2,1,True
-23,"Quel est le volume des appels téléphoniques comparé à celui des courriers dans les procédures de rappel?",17,other,2,4,2,False
-24,"Quels sont les revenus maximums pour être éligible au logement social en fonction du nombre de personnes dans le ménage à Paris ?",23,other,4,3,-1,False
-25,"Comment a évolué le total de l'actif d'une société entre 2004 et 2005 selon les normes IFRS ?",18,other,2,1,-1,False
-26,"Comment se répartissent les types de propriétés forestières dans les différents territoires en France?",14,other,4,1,-3,False
-27,"Quelle est la différence de rémunération moyenne entre les catégories A, B et C dans la fonction publique en 2013 ?",21,other,1,1,0,False
-28,"De combien étaient les ventes en millions d'euros en 2011 ?",11,other,1,None,10,True
-29,"Combien d'habitant y avait il au total dans les 5 plus grandes villes de France en 2012 ?",18,other,2,1,-1,False
-30,"Quelles ont été les variations du chiffre d'affaires des entreprises aéronautiques entre 2009 et 2011 ?",16,other,1,1,0,False
-31,"Comment l'évolution des prix du carburant a-t-elle affecté les coûts d'exploitation dans l'industrie aérienne au cours de la dernière période ?",21,other,2,2,0,False
-32,"Quelles informations financières de base peut-on obtenir sur la performance annuelle d'une entreprise sur plusieurs exercices?",16,other,None,None,0,False
-33,"A combien s'élevaient les couts d'avions en millions d'euros ?",10,other,2,2,0,False
-34,"Quel est le pourcentage du budget alloué à la culture par rapport aux autres postes de dépense dans les budgets publics?",21,other,2,2,0,False
-35,"Quelles sont les méthodes de rappel les plus utilisées dans la communication avec les clients?",15,other,1,1,0,False
-36,"Quels montants ont été consacrés au transport scolaire et aux contingents destinés aux SDIS en France au cours des années 2000?",21,other,1,3,2,True
-37,"Quels sont les différents types de catégories de radios disponibles dans la région de la Roche Posay ?",18,other,4,4,0,False
-38,"Quel est le montant des dotations aux amortissements et aux provisions ? ",12,other,1,5,4,True
-39,"Quel est l'impact des variations de change sur les coûts opérationnels des compagnies aériennes ?",15,other,3,1,-2,False
-40,"Quelle a été l'évolution du nombre d'actions de société entre le 1er janvier et la fin de l'exercice pour les années récentes?",22,other,2,1,-1,False
-41,"Quelles étaient les valeurs des créances commerciales des entreprises à la fin de l'année 2005 ?",16,other,2,2,0,False
-42,"Comment ont évolué les indices économiques des États-Unis et du Canada entre 2006 et 2008?",15,other,1,2,1,True
-43,"Quelles sont les différentes méthodes de calcul des primes dans les entreprises françaises ?",14,other,2,None,9,False
-44,"quel est la moyenne du nombre de voyage à motif professionnel en 2013 ?",14,other,1,2,1,True
-45,"Quel est l'ordre de grandeur de l'indemnité de stage dans les coûts de fonctionnement d'un projet universitaire ?",18,other,1,2,1,True
-46,"Combien d'unités ont été vendues dans le secteur de l'e-commerce au premier trimestre de 2016 ?",16,other,1,1,0,False
-47,"Quels sont les chiffres de croissance des supermarchés 'SM Pão de Açúcar' au Brésil durant l'année fiscale de 2019 à 2020?",21,other,3,3,0,False
-48,"Combien de courriels ont été envoyés ?",7,other,None,None,0,False
-49,"Quel est le rôle des régions dans le financement des services d'incendie et de secours comparé à d'autres échelons locaux ?",21,other,4,7,3,False
-50,"Comment l'effectif des patients et les données démographiques varient-ils entre les services de médecine et de chirurgie au sein des hôpitaux publics et privés?",24,other,1,3,2,True
-51,"Quelles étaient les prévisions de dépenses pour la gouvernance et le pilotage en 2017 par rapport à 2016?",18,other,2,2,0,False
-52,"Quelle a été l'évolution du coût de l'énergie pour les ménages en France dans les années 2000 ?",18,other,5,4,-1,False
-53,"Quelle est la durée moyenne d'occupation d'un logement pour les propriétaires locataires par rapport à l'ensemble des occupants?",18,other,1,1,0,False
-54,"quel est le total de passifs au 31 decembre 2011 ?",11,other,1,None,10,True
-55,"Quelle est la part des opérations de crédit-bail dans les prêts et créances sur la clientèle en 2005 ?",19,other,1,2,1,True
-56,"Quelle était la valeur des actifs non courants d'Air France en 2012 ?",13,other,1,2,1,True
-57,"Quelles étaient les fourchettes de pourcentage pour les années 2006 à 2008 concernant un indicateur économique par zone géographique?",19,other,4,8,4,False
-58,"Comment a évolué le nombre de cyclistes blessés dans les accidents de la route en France récemment?",17,other,3,3,0,False
-59,"Combien de déchetteries publiques existent en France et quel tonnage de déchets y est traité ?",16,other,2,4,2,False
-60,"Combien de TGV partent de la gare de Bercy ?",10,other,2,1,-1,False
-61,"Quel a été le revenu d'affaires de KLM Cargo pour l'année financière 2010/2011 ?",14,other,4,2,-2,False
-62,"combien de zones géographiques ont un excédent de fond de pension entre 4% et 6.9% en 2008?",17,other,None,None,0,False
-63,"Comment puis-je trouver les informations de contact pour des lieux dans différents arrondissements parisiens ?",15,other,2,2,0,False
-64,"Combien de zones distingue t on ?",7,other,1,None,10,True
-65,"Quelles stations de radio peut-on écouter à Chatellerault et sur quelles fréquences MHz ?",14,other,4,4,0,False
-66,"Quelle largeur du quai de Boulevard périphérique est affectée par le bruit ?",13,other,2,2,0,False
-67,"Comment a évolué l'exécution des obligations du bailleur en termes de pourcentage en 2016 et 2017 ?",17,other,3,2,-1,False
-68,"Quelles sont les différences dans la répartition d'une espèce entre le domaine Atlantique, Continental et Méditerranéen?",16,other,3,3,0,False
-69,"Quelle région a contribué le plus au chiffre d'affaires de KLM Cargo lors de l'exercice financier 2010/2011 ?",18,other,2,5,3,False
-70,"Quelle était la différence entre le nombre total d'exemplaires de monographies imprimés en 2012 et 2013 ?",17,other,2,1,-1,False
-71,"Combien de trains TER et Intercités partent de la Gare de Bercy pendant la nuit?",15,other,4,4,0,False
-72,"Y a-t-il des années où certaines entreprises de transport telles que ASF ou COFIROUTE n'ont pas enregistré de croissance ?",20,other,4,None,7,False
-73,"Comment a évolué la marge opérationnelle des sociétés entre deux exercices fiscaux consécutifs?",13,other,None,None,0,False
-74,"Quelle a été l'évolution des investissements spécifiques en millions d'euros entre 2010 et 2011?",14,other,4,1,-3,False
-75,"Quel est le pourcentage moyen en 2012 sur les 13 universités parisiennes ?",13,other,1,1,0,False
-76,"Quelles sont les statistiques récentes sur le nombre de livres acquis et prêtés par les bibliothèques publiques?",17,other,3,3,0,False
-77,"Que valent les obligations en septembre 2006 ?",8,other,1,1,0,False
-78,"Combien d'incitations au non respect des règle sur le repos hebdomadaire ont lieu avant les années 2000 ?",18,other,1,2,1,True
-79,"Quel est l'impact financier prévu de la généralisation d'un régime sur le traitement des fichiers bénéficiaires et l'adressage des chèques?",20,other,3,1,-2,False
-80,"Comment le taux de reprise moyen des programmes télévisés en France a-t-il changé de Mars 2009 à Mars 2010 ?",20,other,1,1,0,False
-81,"Comment ont fluctué les dépenses totales pour les collèges en France de 1995 à 2011?",15,other,1,3,2,True
-82,"Quel était le montant total des litiges en euros enregistré en juin 2017?",13,other,2,None,9,False
-83,"Quel est le taux d'ESCOTA en 2012 ?",8,other,3,3,0,False
-84,"Combien d'infractions liées aux excès de vitesse dans les transports exceptionnels ont été enregistrées annuellement entre 1993 et 2005 ?",20,other,1,2,1,True
-85,"Comment est classé le bruit sur le Boulevard Périphérique par rapport à d'autres axes à Paris?",16,other,3,1,-2,False
-86,"Comment varient les plafonds de ressources pour l'accès aux logements sociaux entre Paris, l'Île-de-France et les autres régions françaises ?",20,other,2,7,5,False
-87,"Quelle part des revenus des compagnies aériennes provient de la vente d'équipements aéronautiques?",13,other,8,None,3,False
-88,"Combien d'actions économiques y a-t-il au total ?",8,other,3,2,-1,False
-89,"Sur l'année 2009-2010, de combien de % ont augmenté les droits de vol ?",14,other,4,8,4,False
-90,"Quelle a été l'évolution du chiffre d'affaires international d'une entreprise spécifique entre 2011 et 2012 ?",16,other,1,1,0,False
-91,"Quel impact ont eu les ajustements opérationnels sur les flux de trésorerie et les niveaux d'endettement des entreprises récemment?",19,other,None,None,0,False
-92,"Quels sont les pourcentages de réparations locatives effectuées par les locataires en 2016 et 2017 ?",16,other,1,1,0,False
-93,"Comment a varié le nombre de points de vente en Colombie pour le groupe 'Surtimax' au premier semestre de 2020?",20,other,2,3,1,False
-94,"Quels sont les montants des obligations locatives de crédit-bail enregistrés en mars et septembre 2006 ?",16,other,2,6,4,False
-95,"Quels sont les tarifs moyens pratiqués par les sociétés de transport pour différentes classes de véhicules?",16,other,1,2,1,True
-96,"Combien d'actions ont été vendues entre décembre 2010 et mars 2011 ?",12,other,2,None,9,False
-97,"Comment l'utilisation des différents types de rappels a-t-elle évolué d'une année à l'autre?",13,other,4,None,7,False
-98,"Peut-on écouter France Culture à Chauvigny et si oui, sur quelle fréquence MHz ?",14,other,2,2,0,False
-99,"Quel montant total a été investi en millions d'euros courants en 2010 et 2011?",14,other,1,1,0,False
-100,"Quelles étaient les recettes unitaires par ATK et RTK pour KLM Cargo durant l'exercice 2011 ?",16,other,2,1,-1,False
-101,"Comment sont structurées les données relatives aux opérations financières dans un document comptable ?",14,other,None,None,0,False
-102,"Quelle est la tendance générale des déplacements, tous motifs confondus, de 2013 à 2014 ?",15,other,1,1,0,False
-103,"combien d'agents de bibliothèques y a-t-il en France ?",9,other,4,4,0,False
-104,"Combien d'agents travaillent en moyenne dans les bibliothèques municipales et comment cela se compare-t-il aux bibliothèques universitaires?",17,other,4,1,-3,False
-105,"Quel est le pourcentage de forêts domaniales dans les zones Natura 2000 en France métropolitaine?",15,other,2,4,2,False
-106,"Quelles étaient les principales catégories de dette financière d'une entreprise à la fin de l'année 2019 et 2020?",18,other,2,None,9,False
-107,"Combien d'états des lieux ont eu lieu en 2016 ?",10,other,3,4,1,False
-108,"Comment varient les montants des primes perçues par les salariés en fonction de la politique de rémunération de leur entreprise en France ?",23,other,1,1,0,False
-109,"Comment ont évolué les pourcentages de croissance pour les compagnies autoroutières françaises sur la période de 2007 à 2011 ?",20,other,3,3,0,False
-110,"Quel est le pourcentage de population vivant dans les villes de plus de 70 000 habitants comparé aux petites villes?",20,other,None,7,-4,False
-111,"Quels sont les niveaux de bruit enregistrés dans différents lieux de circulation à Paris?",14,other,2,1,-1,False
-112,"Quel est l'effectif de l'espèce en Atlantique ?",8,other,2,2,0,False
-113,"Quel est le nombre de personnes blessées au total en 2020 ?",12,other,2,2,0,False
-114,"Comment les plans d'options d'achat d'actions et les rachats d'actions ont-ils affecté le nombre d'actions ordinaires disponibles pour calculer le bénéfice de base par action en 2006 ?",28,other,None,None,0,False
-115,"Comment a évolué le montant des provisions pour risques chez les clients entre 2004 et 2005 ?",17,other,5,1,-4,False
-116,"Quelles étaient les valeurs du résultat net et des dividendes distribués par une entreprise donnée entre 2016 et 2017?",19,other,1,2,1,True
-117,"En médecine et chirurgie dans les CHU, combien de patients effectifs y a t il eu ?",17,other,1,3,2,True
-118,"Quel est le taux de croissance annuel moyen de la consommation intermédiaire entre 2000 et 2011?",16,other,2,1,-1,False
-119,"Quelles sont les régions françaises ayant une majorité de surfaces forestières privées incluses dans Natura 2000?",16,other,3,4,1,False
-120,"Combien de millions d'euros ont été investis en 2010 ? ",10,other,2,3,1,False
-121,"Dans les communes de différentes tailles, comment se répartit la population en fonction du nombre d'habitants?",16,other,None,None,0,False
-122,"Quel pourcentage de femmes parmi les titulaires de la fonction publique était présent en 2013 ?",16,other,2,1,-1,False
-123,"Quelle a été l'évolution des prix des loyers en France au cours des années 1990 à 2010 ?",18,other,3,1,-2,False
-124,"Quelle a été l'évolution de la surface moyenne des logements collectifs en France entre 2001 et 2011 ?",18,other,1,2,1,True
-125,"Quelle spécialité médicale affiche la plus grande proportion de patients avec EIG par rapport à ceux sans EIG?",18,other,1,1,0,False
-126,"Quelle était la part des programmes de la tranche 17h-24h disponibles en TVR sur TF1 en Mars 2010 ?",19,other,2,2,0,False
-127,"Quel est le pourcentage d'augmentation des dépenses totales des ménages français dans les domaines du logement, de l'énergie et des charges sur les deux dernières décennies ?",27,other,None,None,0,False
-128,"Quel est le montant moyen des travaux de rénovation énergétique engagés dans le secteur résidentiel?",15,other,2,5,3,False
-129,"Quels sont les impacts des actions de gestion sur les perspectives futures de conservation d'une espèce dans différents domaines biogéographiques?",20,other,2,1,-1,False
-130,"Quel était le résultat avant impots des caisses régionales en 2016 ?",12,other,3,10,7,False
-131,"Comment est classée la ville de Lyon par rapport aux autres grandes villes françaises concernant la population ?",18,other,2,2,0,False
-132,"Quelles sont les principales catégories de produits et charges exceptionnels dans un compte de résultat d'entreprise?",16,other,3,3,0,False
-133,"Dans les institutions de prévoyance, quelle est la durée moyenne de couverture pour le forfait journalier en psychiatrie?",18,other,3,3,0,False
-134,"Quel est le résultat d'exploitation du 3e trimestre 2010-11 ?",10,other,4,3,-1,False
-135,"Comment ont évolué les coûts de restructuration entre décembre 2016 et juin 2017?",13,other,2,1,-1,False
-136,"Combien de chambres funéraires sont disponibles dans la région Grand Est?",11,other,2,2,0,False
-137,"Quelle a été l'évolution du nombre de voyageurs utilisant le transport routier entre 2008 et 2014 ?",17,other,3,2,-1,False
-138,"Quelles ont été les variations du chiffre d'affaires et du résultat net pour une entreprise donnée entre deux périodes?",19,other,2,5,3,False
-139,"Quelles sont les dépenses en acquisition de terrain en 2008 ?",11,other,1,None,10,True
-140,"Quels sont les types d'installations de gestion des déchets en France et leurs capacités de traitement ?",17,other,4,4,0,False
-141,"Quelles sont les principales villes de France en termes de population totale ?",13,other,1,3,2,True
-142,"Combien est dépensé en moyenne pour la sécurité et la salubrité publiques par habitant dans les administrations publiques?",18,other,2,3,1,False
-143,"Quelles étaient les principales composantes du produit net bancaire des caisses régionales et de LCL en France en 2004, y compris selon les normes IAS 32-39 et IFRS 4?",29,other,2,3,1,False
-144,"Quelles conséquences a une variation de la marge opérationnelle sur les projections financières d'une société?",15,other,6,7,1,False
-145,"Combien ont représenté les études préliminaires dans le total des investissements en 2011?",13,other,3,3,0,False
-146,"Quelle part des résidents habitent au même endroit depuis plus de 12 ans?",13,other,3,3,0,False
-147,"Combien d'établissements intercommunaux sont dédiés aux activités culturelles et sportives ?",11,other,2,2,0,False
-148,"Combien de millions d'euros ont été dépensés pour l'Allocation Compensatrice pour Tierce Personne en 2007 ?",16,other,10,None,1,False
-149,"Quel pourcentage de contrats individuels de mutuelles ne couvrent pas les frais de psychiatrie?",14,other,3,1,-2,False
-150,"Combien de projets de rénovation énergétique ont été achevés l'année dernière et quelle en a été la contribution aux économies d'énergie?",21,other,8,None,3,False
-151,"Quelle a été la croissance moyenne des incicateurs entre le 1er trimestre 2015 et 2016 ?",16,other,10,None,1,False
-152,"Combien de catégories de ménages peuvent bénéficier de logements sociaux à Paris pour moins de 60000€ ?",17,other,3,1,-2,False
-153,"Quelle est la différence de ressources requises pour une personne supplémentaire dans un ménage souhaitant un logement social en région par rapport à Paris ?",25,other,2,3,1,False
-154,"Quel est le coût salarial de l'équipe projet?",8,other,2,2,0,False
-155,"Comment se répartissaient les actifs sectoriels entre les services financiers spécialisés et la gestion d'actifs/assurances privées en 2004 selon le rapport financier?",22,other,3,1,-2,False
-156,"Combien d'exemplaires de monographies dans le domaine de l'économie et de la gestion ont été imprimés en 2013 ?",19,other,2,3,1,False
-157,"Quel pourcentage du revenu total de KLM Cargo l'Asie a-t-elle représenté pendant les 9 mois de l'exercice financier 2011 ?",20,other,3,4,1,False
-158,"Quelle a été l'évolution du chiffre d'affaires du secteur de la construction entre le premier trimestre de 2020 et le premier trimestre de 2021?",24,other,1,4,3,True
-159,"Y a-t-il une différence significative dans la répartition des patients avec EIG entre les CHU et les établissements sous DG?",20,other,2,2,0,False
-160,"Quelle a été l'évolution du bénéfice net sur plusieurs années pour une entreprise donnée?",14,other,None,None,0,False
-161,"Comment a évolué le montant des prêts et créances entre mars 2011 et décembre 2011 ?",16,other,None,None,0,False
-162,"Quelle est l'évolution des coûts prévisionnels pour l'assistance aux utilisateurs et les réclamations entre 2016 et le régime de généralisation permanent?",21,other,4,3,-1,False
-163,"Quelle est l'évolution des cas d'incitation à ignorer le repos journalier sur une période de 1993 à 2005 ?",19,other,2,3,1,False
-164,"Quelle est la différence entre le nombre d'actions ordinaires et potentielles utilisées pour calculer le résultat dilué par action?",19,other,None,None,0,False
-165,"Comment la croissance à long terme affecte-t-elle la valeur des flux de trésorerie d'une entreprise?",15,other,1,1,0,False
-166,"Quels sont les impacts sur les charges d'exploitation suite à un changement dans le chiffre d'affaires d'une entreprise?",18,other,2,4,2,False
-167,"Quelle a été l'évolution du volume d'affaires du e-commerce entre T1 2015 et T1 2016 ?",16,other,2,3,1,False
-168,"Combien y a-t-il d'installations de traitement des eaux usées ?",10,other,3,2,-1,False
-169,"a combien se sont élevées les dépenses de fonctionnement d'aide sociale en 2010 ?",14,other,1,1,0,False
-170,"Quels sont les ratios de sexe masculin et l'âge moyen des patients en médecine et en chirurgie dans différents types d'établissements de santé?",23,other,2,2,0,False
-171,"Comment varient les prix entre les classes de véhicules chez les différents opérateurs de péages?",15,other,None,None,0,False
-172,"Quelles informations trouve-t-on dans un bordereau de gestion budgétaire concernant les codes collectivités et les codes budgets ?",18,other,4,3,-1,False
-173,"Comment se répartit le trafic aérien entre les liaisons internationales et les liaisons intérieures en France ?",17,other,1,1,0,False
-174,"Comment se répartit la dette à long terme d'une entreprise entre les dettes courantes et non courantes pour l'année 2006 ?",21,other,None,None,0,False
-175,"quelle radio a pour fréquence 86.2 ?",7,other,2,2,0,False
-176,"Quelle a été l'évolution de la dépense courante en millions d'euros entre 2000 et 2011 en France?",17,other,3,1,-2,False
-177,"Quel est le budget d'acquisition moyen pour les collections d'imprimés dans les grandes institutions de prêt de livres?",18,other,2,4,2,False
-178,"Comment ont fluctué les chiffres du transport routier de voyageurs de 2013 à 2014 ?",15,other,3,3,0,False
-179,"Quelle est l'évolution du nombre de tués dans les accidents de la route en France entre 2015 et 2020?",19,other,1,1,0,False
-180,"Quelle est la fréquence des trains TER et Intercités à la Gare de Bercy durant la journée et la soirée?",20,other,1,1,0,False
-181,"Quelle chaîne de télévision a eu le taux de reprise des programmes le plus élevé en Mars 2010 ?",19,other,3,2,-1,False
-182,"Quel est le nombre de titres publiés dans le domaine des lettres et langues en 2013 ?",17,other,3,3,0,False
-183,"Quels sont les principaux postes de dépenses externes pour les compagnies aériennes?",12,other,7,None,4,False
-184,"Quel type de dette correspond à la plus grosse partie de la dette financière totale ?",16,other,2,1,-1,False
-185,"Quelle est l'évolution du pourcentage de logements considérés comme non décents en France entre 2016 et 2017 ?",18,other,4,1,-3,False
-186,"Combien de logements mesuraient plus de 100 mètres carrés en 2010?",11,other,2,6,4,False
-187,"Quels sont les numéros de téléphone de certaines adresses spécifiques dans le premier arrondissement de Paris ?",17,other,1,1,0,False
-188,"Quels sont les pourcentages de variation de la part des logements de moins de 40 m² en collectif au cours des années 2000 ?",24,other,3,3,0,False
-189,"Comment ont évolué les coûts de carburant pour les avions et les charges externes dans le secteur aéronautique au cours des dernières années ?",24,other,7,5,-2,False
-190,"Quelle est l'évolution du nombre de bénéficiaires de l'ACTP et de la PCH de 2006 à 2020?",17,other,1,1,0,False
-191,"Peut-on trouver des exemples de structures de primes basées sur l'égalité ou la performance dans les grandes entreprises ?",19,other,1,7,6,True
-192,"Quelles sont les proportions de populations dans les villes selon différentes tranches de taille d'habitants?",15,other,5,10,5,False
-193,"Quel est le taux de contrats collectifs dans les institutions de prévoyance qui sont pris en charge de 1 à 90 jours ?",23,other,1,2,1,True
-194,"Comment a évolué la marge d'EBITDAR pour une certaine société au cours d'un trimestre spécifique?",15,other,2,1,-1,False
-195,"Quelles sont les différentes catégories d'immobilisations comptabilisées dans les bilans des entreprises ?",13,other,1,2,1,True
-196,"En 2004, quel était la part de l'énergie dans les dépenses courantes ?",13,other,7,7,0,False
-197,"Quelle est l'évolution du nombre de magasins de la chaîne 'HM Libertad' en Argentine entre septembre 2019 et juin 2020?",20,other,1,1,0,False
-198,"Comment se répartit la durée d'occupation des logements entre locataires et propriétaires?",12,other,1,1,0,False
-199,"Quel est le résultat net du groupe en 2017 ?",10,other,3,1,-2,False
+qi,query,n_words,has_digit,has_at,has_color,has_quoted_or_acronym,has_identifier_noun,bucket,ceiling_rank,muvera_rank,rank_delta,ceiling_ok_muvera_lost
+0,"Quelles étaient les principales composantes du bénéfice net par action d'une entreprise pour les années 2016 et 2017?",18,True,False,False,False,False,specific_entity_lookup,1,2,1,True
+1,"Comment les activités opérationnelles, d'investissement et de financement affectent-elles la trésorerie d'une entreprise au cours de différentes périodes?",18,False,False,False,False,False,descriptive_general,None,None,0,False
+2,"Quels sont les champs typiques et leur signification dans une base de données d'exercices financiers d'une collectivité ?",18,False,False,False,True,False,specific_entity_lookup,4,1,-3,False
+3,"Comment a évolué le résultat net des sociétés consolidées dans le secteur aérien entre 2011 et 2012?",17,True,False,False,False,False,specific_entity_lookup,7,None,4,False
+4,"Quel est l'impact des provisions sur le résultat d'exploitation dans l'industrie aéronautique récemment ?",14,False,False,False,True,False,specific_entity_lookup,2,4,2,False
+5,"Combien de personnes sont employées à entretenir les chambres funéraires en Normandie ?",13,False,False,False,False,False,descriptive_general,1,1,0,False
+6,"quelle est la moyenne des dépenses par secteur en 2008 ?",11,True,False,False,False,False,specific_entity_lookup,None,None,0,False
+7,"Quels sont les taux de croissance annuels moyens du transport routier de voyageurs pour la période 2013-2008 ?",18,True,False,False,False,False,specific_entity_lookup,2,3,1,False
+8,"En 2011, quelle est la part des revenus de l'activité cargo de KLM qui concerne des destinations en Afrique ou au Moyen-Orient ou en Asie?",25,True,False,False,True,False,specific_entity_lookup,1,1,0,False
+9,"Combien de trimestres le trafic intérieur est-il supérieur à 4,5 en 2020 ?",13,True,False,False,False,False,specific_entity_lookup,2,1,-1,False
+10,"Quel est le revenu total du groupe KLM en cargo sur l'année financière 2011 seulement ? ",16,True,False,False,True,False,specific_entity_lookup,3,2,-1,False
+11,"Quel est l'écart relatif des coûts du socle fonctionnel entre les prévisions 2017 et la somme réalisé la même année ? ",21,True,False,False,False,False,specific_entity_lookup,1,3,2,True
+12,"Quelle est la méthodologie de calcul du résultat exceptionnel comptable pour une entreprise?",13,False,False,False,False,False,descriptive_general,3,2,-1,False
+13,"Quelle est la fréquence des séances de conte destinées aux écoles maternelles et primaires tout au long de l'année ?",20,False,False,False,False,False,descriptive_general,1,1,0,False
+14,"Quels types de train circulent à la Gare de Bercy et à quelle vitesse?",14,False,False,False,False,False,descriptive_general,3,2,-1,False
+15,"Y a-t-il des projets de développement ou de fermeture pour de nouvelles installations de traitement des déchets en France récemment ?",21,False,False,False,False,False,descriptive_general,4,2,-2,False
+16,"Quels sont les chiffres de la population municipale pour les grandes villes françaises ?",14,False,False,False,False,False,descriptive_general,3,3,0,False
+17,"Quelle part de la surface des forêts Natura 2000 est domaniale?",11,True,False,False,False,False,specific_entity_lookup,1,4,3,True
+18,"Quelle a été l'évolution du nombre moyen pondéré d'actions ordinaires en circulation entre 2005 et 2006 ?",17,True,False,False,True,False,specific_entity_lookup,None,None,0,False
+19,"Quel était le CA des activités de construction au T1 2021 ?",12,True,False,False,True,False,specific_entity_lookup,2,2,0,False
+20,"Quelles étaient les valeurs des actifs financiers disponibles à la vente au 31 décembre 2011 ?",16,True,False,False,False,False,specific_entity_lookup,4,6,2,False
+21,"Quel impact ont les taux de change sur les équivalents de trésorerie d'une entreprise au fil du temps?",18,False,False,False,False,False,descriptive_general,None,None,0,False
+22,"Quel est l'impact d'une augmentation du taux d'actualisation sur les flux de trésorerie futurs?",14,False,False,False,True,False,specific_entity_lookup,1,3,2,True
+23,"Quel est le volume des appels téléphoniques comparé à celui des courriers dans les procédures de rappel?",17,False,False,False,False,False,descriptive_general,2,2,0,False
+24,"Quels sont les revenus maximums pour être éligible au logement social en fonction du nombre de personnes dans le ménage à Paris ?",23,False,False,False,False,False,descriptive_general,4,1,-3,False
+25,"Comment a évolué le total de l'actif d'une société entre 2004 et 2005 selon les normes IFRS ?",18,True,False,False,True,False,specific_entity_lookup,2,1,-1,False
+26,"Comment se répartissent les types de propriétés forestières dans les différents territoires en France?",14,False,False,False,False,False,descriptive_general,4,4,0,False
+27,"Quelle est la différence de rémunération moyenne entre les catégories A, B et C dans la fonction publique en 2013 ?",21,True,False,False,False,False,specific_entity_lookup,1,1,0,False
+28,"De combien étaient les ventes en millions d'euros en 2011 ?",11,True,False,False,False,False,specific_entity_lookup,1,None,10,True
+29,"Combien d'habitant y avait il au total dans les 5 plus grandes villes de France en 2012 ?",18,True,False,False,False,False,specific_entity_lookup,2,3,1,False
+30,"Quelles ont été les variations du chiffre d'affaires des entreprises aéronautiques entre 2009 et 2011 ?",16,True,False,False,False,False,specific_entity_lookup,1,None,10,True
+31,"Comment l'évolution des prix du carburant a-t-elle affecté les coûts d'exploitation dans l'industrie aérienne au cours de la dernière période ?",21,False,False,False,True,False,specific_entity_lookup,2,1,-1,False
+32,"Quelles informations financières de base peut-on obtenir sur la performance annuelle d'une entreprise sur plusieurs exercices?",16,False,False,False,False,False,descriptive_general,None,None,0,False
+33,"A combien s'élevaient les couts d'avions en millions d'euros ?",10,False,False,False,True,False,specific_entity_lookup,2,1,-1,False
+34,"Quel est le pourcentage du budget alloué à la culture par rapport aux autres postes de dépense dans les budgets publics?",21,False,False,False,False,False,descriptive_general,2,3,1,False
+35,"Quelles sont les méthodes de rappel les plus utilisées dans la communication avec les clients?",15,False,False,False,False,False,descriptive_general,1,2,1,True
+36,"Quels montants ont été consacrés au transport scolaire et aux contingents destinés aux SDIS en France au cours des années 2000?",21,True,False,False,True,False,specific_entity_lookup,1,2,1,True
+37,"Quels sont les différents types de catégories de radios disponibles dans la région de la Roche Posay ?",18,False,False,False,False,False,descriptive_general,4,1,-3,False
+38,"Quel est le montant des dotations aux amortissements et aux provisions ? ",12,False,False,False,False,False,descriptive_general,1,3,2,True
+39,"Quel est l'impact des variations de change sur les coûts opérationnels des compagnies aériennes ?",15,False,False,False,False,False,descriptive_general,3,2,-1,False
+40,"Quelle a été l'évolution du nombre d'actions de société entre le 1er janvier et la fin de l'exercice pour les années récentes?",22,True,False,False,True,False,specific_entity_lookup,2,4,2,False
+41,"Quelles étaient les valeurs des créances commerciales des entreprises à la fin de l'année 2005 ?",16,True,False,False,False,False,specific_entity_lookup,2,5,3,False
+42,"Comment ont évolué les indices économiques des États-Unis et du Canada entre 2006 et 2008?",15,True,False,False,False,False,specific_entity_lookup,1,1,0,False
+43,"Quelles sont les différentes méthodes de calcul des primes dans les entreprises françaises ?",14,False,False,False,False,False,descriptive_general,2,6,4,False
+44,"quel est la moyenne du nombre de voyage à motif professionnel en 2013 ?",14,True,False,False,False,False,specific_entity_lookup,1,2,1,True
+45,"Quel est l'ordre de grandeur de l'indemnité de stage dans les coûts de fonctionnement d'un projet universitaire ?",18,False,False,False,True,False,specific_entity_lookup,1,None,10,True
+46,"Combien d'unités ont été vendues dans le secteur de l'e-commerce au premier trimestre de 2016 ?",16,True,False,False,False,False,specific_entity_lookup,1,1,0,False
+47,"Quels sont les chiffres de croissance des supermarchés 'SM Pão de Açúcar' au Brésil durant l'année fiscale de 2019 à 2020?",21,True,False,False,True,False,specific_entity_lookup,3,2,-1,False
+48,"Combien de courriels ont été envoyés ?",7,False,False,False,False,True,specific_entity_lookup,None,None,0,False
+49,"Quel est le rôle des régions dans le financement des services d'incendie et de secours comparé à d'autres échelons locaux ?",21,False,False,False,True,False,specific_entity_lookup,4,10,6,False
+50,"Comment l'effectif des patients et les données démographiques varient-ils entre les services de médecine et de chirurgie au sein des hôpitaux publics et privés?",24,False,False,False,False,False,descriptive_general,1,2,1,True
+51,"Quelles étaient les prévisions de dépenses pour la gouvernance et le pilotage en 2017 par rapport à 2016?",18,True,False,False,False,False,specific_entity_lookup,2,3,1,False
+52,"Quelle a été l'évolution du coût de l'énergie pour les ménages en France dans les années 2000 ?",18,True,False,False,True,False,specific_entity_lookup,5,4,-1,False
+53,"Quelle est la durée moyenne d'occupation d'un logement pour les propriétaires locataires par rapport à l'ensemble des occupants?",18,False,False,False,True,False,specific_entity_lookup,1,2,1,True
+54,"quel est le total de passifs au 31 decembre 2011 ?",11,True,False,False,False,False,specific_entity_lookup,1,None,10,True
+55,"Quelle est la part des opérations de crédit-bail dans les prêts et créances sur la clientèle en 2005 ?",19,True,False,False,False,False,specific_entity_lookup,1,2,1,True
+56,"Quelle était la valeur des actifs non courants d'Air France en 2012 ?",13,True,False,False,False,False,specific_entity_lookup,1,None,10,True
+57,"Quelles étaient les fourchettes de pourcentage pour les années 2006 à 2008 concernant un indicateur économique par zone géographique?",19,True,False,False,False,False,specific_entity_lookup,4,None,7,False
+58,"Comment a évolué le nombre de cyclistes blessés dans les accidents de la route en France récemment?",17,False,False,False,False,False,descriptive_general,3,3,0,False
+59,"Combien de déchetteries publiques existent en France et quel tonnage de déchets y est traité ?",16,False,False,False,False,False,descriptive_general,2,2,0,False
+60,"Combien de TGV partent de la gare de Bercy ?",10,False,False,False,True,False,specific_entity_lookup,2,3,1,False
+61,"Quel a été le revenu d'affaires de KLM Cargo pour l'année financière 2010/2011 ?",14,True,False,False,True,False,specific_entity_lookup,4,1,-3,False
+62,"combien de zones géographiques ont un excédent de fond de pension entre 4% et 6.9% en 2008?",17,True,False,False,False,False,specific_entity_lookup,None,None,0,False
+63,"Comment puis-je trouver les informations de contact pour des lieux dans différents arrondissements parisiens ?",15,False,False,False,False,False,descriptive_general,2,1,-1,False
+64,"Combien de zones distingue t on ?",7,False,False,False,False,False,descriptive_general,1,2,1,True
+65,"Quelles stations de radio peut-on écouter à Chatellerault et sur quelles fréquences MHz ?",14,False,False,False,False,False,descriptive_general,4,2,-2,False
+66,"Quelle largeur du quai de Boulevard périphérique est affectée par le bruit ?",13,False,False,False,False,False,descriptive_general,2,1,-1,False
+67,"Comment a évolué l'exécution des obligations du bailleur en termes de pourcentage en 2016 et 2017 ?",17,True,False,False,False,False,specific_entity_lookup,3,1,-2,False
+68,"Quelles sont les différences dans la répartition d'une espèce entre le domaine Atlantique, Continental et Méditerranéen?",16,False,False,False,False,False,descriptive_general,3,1,-2,False
+69,"Quelle région a contribué le plus au chiffre d'affaires de KLM Cargo lors de l'exercice financier 2010/2011 ?",18,True,False,False,True,False,specific_entity_lookup,2,4,2,False
+70,"Quelle était la différence entre le nombre total d'exemplaires de monographies imprimés en 2012 et 2013 ?",17,True,False,False,False,False,specific_entity_lookup,2,2,0,False
+71,"Combien de trains TER et Intercités partent de la Gare de Bercy pendant la nuit?",15,False,False,False,True,False,specific_entity_lookup,4,2,-2,False
+72,"Y a-t-il des années où certaines entreprises de transport telles que ASF ou COFIROUTE n'ont pas enregistré de croissance ?",20,False,False,False,True,False,specific_entity_lookup,4,1,-3,False
+73,"Comment a évolué la marge opérationnelle des sociétés entre deux exercices fiscaux consécutifs?",13,False,False,False,False,False,descriptive_general,None,None,0,False
+74,"Quelle a été l'évolution des investissements spécifiques en millions d'euros entre 2010 et 2011?",14,True,False,False,False,False,specific_entity_lookup,4,2,-2,False
+75,"Quel est le pourcentage moyen en 2012 sur les 13 universités parisiennes ?",13,True,False,False,False,False,specific_entity_lookup,1,1,0,False
+76,"Quelles sont les statistiques récentes sur le nombre de livres acquis et prêtés par les bibliothèques publiques?",17,False,False,False,False,False,descriptive_general,3,3,0,False
+77,"Que valent les obligations en septembre 2006 ?",8,True,False,False,False,False,specific_entity_lookup,1,1,0,False
+78,"Combien d'incitations au non respect des règle sur le repos hebdomadaire ont lieu avant les années 2000 ?",18,True,False,False,False,False,specific_entity_lookup,1,1,0,False
+79,"Quel est l'impact financier prévu de la généralisation d'un régime sur le traitement des fichiers bénéficiaires et l'adressage des chèques?",20,False,False,False,False,False,descriptive_general,3,5,2,False
+80,"Comment le taux de reprise moyen des programmes télévisés en France a-t-il changé de Mars 2009 à Mars 2010 ?",20,True,False,False,False,False,specific_entity_lookup,1,1,0,False
+81,"Comment ont fluctué les dépenses totales pour les collèges en France de 1995 à 2011?",15,True,False,False,False,False,specific_entity_lookup,1,1,0,False
+82,"Quel était le montant total des litiges en euros enregistré en juin 2017?",13,True,False,False,False,False,specific_entity_lookup,2,9,7,False
+83,"Quel est le taux d'ESCOTA en 2012 ?",8,True,False,False,True,False,specific_entity_lookup,3,3,0,False
+84,"Combien d'infractions liées aux excès de vitesse dans les transports exceptionnels ont été enregistrées annuellement entre 1993 et 2005 ?",20,True,False,False,False,False,specific_entity_lookup,1,2,1,True
+85,"Comment est classé le bruit sur le Boulevard Périphérique par rapport à d'autres axes à Paris?",16,False,False,False,False,False,descriptive_general,3,3,0,False
+86,"Comment varient les plafonds de ressources pour l'accès aux logements sociaux entre Paris, l'Île-de-France et les autres régions françaises ?",20,False,False,False,False,False,descriptive_general,2,4,2,False
+87,"Quelle part des revenus des compagnies aériennes provient de la vente d'équipements aéronautiques?",13,False,False,False,False,False,descriptive_general,8,None,3,False
+88,"Combien d'actions économiques y a-t-il au total ?",8,False,False,False,False,False,descriptive_general,3,3,0,False
+89,"Sur l'année 2009-2010, de combien de % ont augmenté les droits de vol ?",14,True,False,False,False,False,specific_entity_lookup,4,10,6,False
+90,"Quelle a été l'évolution du chiffre d'affaires international d'une entreprise spécifique entre 2011 et 2012 ?",16,True,False,False,True,False,specific_entity_lookup,1,1,0,False
+91,"Quel impact ont eu les ajustements opérationnels sur les flux de trésorerie et les niveaux d'endettement des entreprises récemment?",19,False,False,False,False,False,descriptive_general,None,None,0,False
+92,"Quels sont les pourcentages de réparations locatives effectuées par les locataires en 2016 et 2017 ?",16,True,False,False,False,False,specific_entity_lookup,1,3,2,True
+93,"Comment a varié le nombre de points de vente en Colombie pour le groupe 'Surtimax' au premier semestre de 2020?",20,True,False,False,True,False,specific_entity_lookup,2,3,1,False
+94,"Quels sont les montants des obligations locatives de crédit-bail enregistrés en mars et septembre 2006 ?",16,True,False,False,False,False,specific_entity_lookup,2,6,4,False
+95,"Quels sont les tarifs moyens pratiqués par les sociétés de transport pour différentes classes de véhicules?",16,False,False,False,False,False,descriptive_general,1,8,7,True
+96,"Combien d'actions ont été vendues entre décembre 2010 et mars 2011 ?",12,True,False,False,False,False,specific_entity_lookup,2,None,9,False
+97,"Comment l'utilisation des différents types de rappels a-t-elle évolué d'une année à l'autre?",13,False,False,False,True,False,specific_entity_lookup,4,3,-1,False
+98,"Peut-on écouter France Culture à Chauvigny et si oui, sur quelle fréquence MHz ?",14,False,False,False,False,False,descriptive_general,2,2,0,False
+99,"Quel montant total a été investi en millions d'euros courants en 2010 et 2011?",14,True,False,False,False,False,specific_entity_lookup,1,3,2,True
+100,"Quelles étaient les recettes unitaires par ATK et RTK pour KLM Cargo durant l'exercice 2011 ?",16,True,False,False,True,False,specific_entity_lookup,2,3,1,False
+101,"Comment sont structurées les données relatives aux opérations financières dans un document comptable ?",14,False,False,False,False,False,descriptive_general,None,None,0,False
+102,"Quelle est la tendance générale des déplacements, tous motifs confondus, de 2013 à 2014 ?",15,True,False,False,False,False,specific_entity_lookup,1,1,0,False
+103,"combien d'agents de bibliothèques y a-t-il en France ?",9,False,False,False,False,False,descriptive_general,4,4,0,False
+104,"Combien d'agents travaillent en moyenne dans les bibliothèques municipales et comment cela se compare-t-il aux bibliothèques universitaires?",17,False,False,False,False,False,descriptive_general,4,2,-2,False
+105,"Quel est le pourcentage de forêts domaniales dans les zones Natura 2000 en France métropolitaine?",15,True,False,False,False,False,specific_entity_lookup,2,3,1,False
+106,"Quelles étaient les principales catégories de dette financière d'une entreprise à la fin de l'année 2019 et 2020?",18,True,False,False,True,False,specific_entity_lookup,2,None,9,False
+107,"Combien d'états des lieux ont eu lieu en 2016 ?",10,True,False,False,False,False,specific_entity_lookup,3,1,-2,False
+108,"Comment varient les montants des primes perçues par les salariés en fonction de la politique de rémunération de leur entreprise en France ?",23,False,False,False,False,False,descriptive_general,1,3,2,True
+109,"Comment ont évolué les pourcentages de croissance pour les compagnies autoroutières françaises sur la période de 2007 à 2011 ?",20,True,False,False,False,False,specific_entity_lookup,3,3,0,False
+110,"Quel est le pourcentage de population vivant dans les villes de plus de 70 000 habitants comparé aux petites villes?",20,True,False,False,False,False,specific_entity_lookup,None,None,0,False
+111,"Quels sont les niveaux de bruit enregistrés dans différents lieux de circulation à Paris?",14,False,False,False,False,False,descriptive_general,2,2,0,False
+112,"Quel est l'effectif de l'espèce en Atlantique ?",8,False,False,False,True,False,specific_entity_lookup,2,2,0,False
+113,"Quel est le nombre de personnes blessées au total en 2020 ?",12,True,False,False,False,False,specific_entity_lookup,2,2,0,False
+114,"Comment les plans d'options d'achat d'actions et les rachats d'actions ont-ils affecté le nombre d'actions ordinaires disponibles pour calculer le bénéfice de base par action en 2006 ?",28,True,False,False,True,False,specific_entity_lookup,None,None,0,False
+115,"Comment a évolué le montant des provisions pour risques chez les clients entre 2004 et 2005 ?",17,True,False,False,False,False,specific_entity_lookup,5,1,-4,False
+116,"Quelles étaient les valeurs du résultat net et des dividendes distribués par une entreprise donnée entre 2016 et 2017?",19,True,False,False,False,False,specific_entity_lookup,1,1,0,False
+117,"En médecine et chirurgie dans les CHU, combien de patients effectifs y a t il eu ?",17,False,False,False,True,False,specific_entity_lookup,1,1,0,False
+118,"Quel est le taux de croissance annuel moyen de la consommation intermédiaire entre 2000 et 2011?",16,True,False,False,False,False,specific_entity_lookup,2,1,-1,False
+119,"Quelles sont les régions françaises ayant une majorité de surfaces forestières privées incluses dans Natura 2000?",16,True,False,False,False,False,specific_entity_lookup,3,2,-1,False
+120,"Combien de millions d'euros ont été investis en 2010 ? ",10,True,False,False,False,False,specific_entity_lookup,2,1,-1,False
+121,"Dans les communes de différentes tailles, comment se répartit la population en fonction du nombre d'habitants?",16,False,False,False,False,False,descriptive_general,None,None,0,False
+122,"Quel pourcentage de femmes parmi les titulaires de la fonction publique était présent en 2013 ?",16,True,False,False,False,False,specific_entity_lookup,2,2,0,False
+123,"Quelle a été l'évolution des prix des loyers en France au cours des années 1990 à 2010 ?",18,True,False,False,False,False,specific_entity_lookup,3,3,0,False
+124,"Quelle a été l'évolution de la surface moyenne des logements collectifs en France entre 2001 et 2011 ?",18,True,False,False,False,False,specific_entity_lookup,1,2,1,True
+125,"Quelle spécialité médicale affiche la plus grande proportion de patients avec EIG par rapport à ceux sans EIG?",18,False,False,False,True,False,specific_entity_lookup,1,2,1,True
+126,"Quelle était la part des programmes de la tranche 17h-24h disponibles en TVR sur TF1 en Mars 2010 ?",19,True,False,False,True,False,specific_entity_lookup,2,1,-1,False
+127,"Quel est le pourcentage d'augmentation des dépenses totales des ménages français dans les domaines du logement, de l'énergie et des charges sur les deux dernières décennies ?",27,False,False,False,False,False,descriptive_general,None,9,-2,False
+128,"Quel est le montant moyen des travaux de rénovation énergétique engagés dans le secteur résidentiel?",15,False,False,False,False,False,descriptive_general,2,2,0,False
+129,"Quels sont les impacts des actions de gestion sur les perspectives futures de conservation d'une espèce dans différents domaines biogéographiques?",20,False,False,False,False,False,descriptive_general,2,2,0,False
+130,"Quel était le résultat avant impots des caisses régionales en 2016 ?",12,True,False,False,False,False,specific_entity_lookup,3,None,8,False
+131,"Comment est classée la ville de Lyon par rapport aux autres grandes villes françaises concernant la population ?",18,False,False,False,False,False,descriptive_general,2,2,0,False
+132,"Quelles sont les principales catégories de produits et charges exceptionnels dans un compte de résultat d'entreprise?",16,False,False,False,False,False,descriptive_general,3,1,-2,False
+133,"Dans les institutions de prévoyance, quelle est la durée moyenne de couverture pour le forfait journalier en psychiatrie?",18,False,False,False,False,False,descriptive_general,3,1,-2,False
+134,"Quel est le résultat d'exploitation du 3e trimestre 2010-11 ?",10,True,False,False,False,False,specific_entity_lookup,4,4,0,False
+135,"Comment ont évolué les coûts de restructuration entre décembre 2016 et juin 2017?",13,True,False,False,False,False,specific_entity_lookup,2,1,-1,False
+136,"Combien de chambres funéraires sont disponibles dans la région Grand Est?",11,False,False,False,False,False,descriptive_general,2,2,0,False
+137,"Quelle a été l'évolution du nombre de voyageurs utilisant le transport routier entre 2008 et 2014 ?",17,True,False,False,False,False,specific_entity_lookup,3,1,-2,False
+138,"Quelles ont été les variations du chiffre d'affaires et du résultat net pour une entreprise donnée entre deux périodes?",19,False,False,False,False,False,descriptive_general,2,1,-1,False
+139,"Quelles sont les dépenses en acquisition de terrain en 2008 ?",11,True,False,False,False,False,specific_entity_lookup,1,3,2,True
+140,"Quels sont les types d'installations de gestion des déchets en France et leurs capacités de traitement ?",17,False,False,False,False,False,descriptive_general,4,1,-3,False
+141,"Quelles sont les principales villes de France en termes de population totale ?",13,False,False,False,False,False,descriptive_general,1,4,3,True
+142,"Combien est dépensé en moyenne pour la sécurité et la salubrité publiques par habitant dans les administrations publiques?",18,False,False,False,False,False,descriptive_general,2,1,-1,False
+143,"Quelles étaient les principales composantes du produit net bancaire des caisses régionales et de LCL en France en 2004, y compris selon les normes IAS 32-39 et IFRS 4?",29,True,False,False,True,False,specific_entity_lookup,2,1,-1,False
+144,"Quelles conséquences a une variation de la marge opérationnelle sur les projections financières d'une société?",15,False,False,False,False,False,descriptive_general,6,10,4,False
+145,"Combien ont représenté les études préliminaires dans le total des investissements en 2011?",13,True,False,False,False,False,specific_entity_lookup,3,4,1,False
+146,"Quelle part des résidents habitent au même endroit depuis plus de 12 ans?",13,True,False,False,False,False,specific_entity_lookup,3,5,2,False
+147,"Combien d'établissements intercommunaux sont dédiés aux activités culturelles et sportives ?",11,False,False,False,False,False,descriptive_general,2,1,-1,False
+148,"Combien de millions d'euros ont été dépensés pour l'Allocation Compensatrice pour Tierce Personne en 2007 ?",16,True,False,False,True,False,specific_entity_lookup,10,None,1,False
+149,"Quel pourcentage de contrats individuels de mutuelles ne couvrent pas les frais de psychiatrie?",14,False,False,False,False,False,descriptive_general,3,1,-2,False
+150,"Combien de projets de rénovation énergétique ont été achevés l'année dernière et quelle en a été la contribution aux économies d'énergie?",21,False,False,False,False,False,descriptive_general,8,2,-6,False
+151,"Quelle a été la croissance moyenne des incicateurs entre le 1er trimestre 2015 et 2016 ?",16,True,False,False,False,False,specific_entity_lookup,10,2,-8,False
+152,"Combien de catégories de ménages peuvent bénéficier de logements sociaux à Paris pour moins de 60000€ ?",17,True,False,False,False,False,specific_entity_lookup,3,3,0,False
+153,"Quelle est la différence de ressources requises pour une personne supplémentaire dans un ménage souhaitant un logement social en région par rapport à Paris ?",25,False,False,False,False,False,descriptive_general,2,2,0,False
+154,"Quel est le coût salarial de l'équipe projet?",8,False,False,False,False,False,descriptive_general,2,1,-1,False
+155,"Comment se répartissaient les actifs sectoriels entre les services financiers spécialisés et la gestion d'actifs/assurances privées en 2004 selon le rapport financier?",22,True,False,False,False,False,specific_entity_lookup,3,1,-2,False
+156,"Combien d'exemplaires de monographies dans le domaine de l'économie et de la gestion ont été imprimés en 2013 ?",19,True,False,False,False,False,specific_entity_lookup,2,3,1,False
+157,"Quel pourcentage du revenu total de KLM Cargo l'Asie a-t-elle représenté pendant les 9 mois de l'exercice financier 2011 ?",20,True,False,False,True,False,specific_entity_lookup,3,2,-1,False
+158,"Quelle a été l'évolution du chiffre d'affaires du secteur de la construction entre le premier trimestre de 2020 et le premier trimestre de 2021?",24,True,False,False,True,False,specific_entity_lookup,1,4,3,True
+159,"Y a-t-il une différence significative dans la répartition des patients avec EIG entre les CHU et les établissements sous DG?",20,False,False,False,True,False,specific_entity_lookup,2,1,-1,False
+160,"Quelle a été l'évolution du bénéfice net sur plusieurs années pour une entreprise donnée?",14,False,False,False,False,False,descriptive_general,None,None,0,False
+161,"Comment a évolué le montant des prêts et créances entre mars 2011 et décembre 2011 ?",16,True,False,False,False,False,specific_entity_lookup,None,None,0,False
+162,"Quelle est l'évolution des coûts prévisionnels pour l'assistance aux utilisateurs et les réclamations entre 2016 et le régime de généralisation permanent?",21,True,False,False,True,False,specific_entity_lookup,4,1,-3,False
+163,"Quelle est l'évolution des cas d'incitation à ignorer le repos journalier sur une période de 1993 à 2005 ?",19,True,False,False,True,False,specific_entity_lookup,2,3,1,False
+164,"Quelle est la différence entre le nombre d'actions ordinaires et potentielles utilisées pour calculer le résultat dilué par action?",19,False,False,False,False,False,descriptive_general,None,None,0,False
+165,"Comment la croissance à long terme affecte-t-elle la valeur des flux de trésorerie d'une entreprise?",15,False,False,False,False,False,descriptive_general,1,1,0,False
+166,"Quels sont les impacts sur les charges d'exploitation suite à un changement dans le chiffre d'affaires d'une entreprise?",18,False,False,False,True,False,specific_entity_lookup,2,2,0,False
+167,"Quelle a été l'évolution du volume d'affaires du e-commerce entre T1 2015 et T1 2016 ?",16,True,False,False,True,False,specific_entity_lookup,2,2,0,False
+168,"Combien y a-t-il d'installations de traitement des eaux usées ?",10,False,False,False,False,False,descriptive_general,3,3,0,False
+169,"a combien se sont élevées les dépenses de fonctionnement d'aide sociale en 2010 ?",14,True,False,False,False,False,specific_entity_lookup,1,1,0,False
+170,"Quels sont les ratios de sexe masculin et l'âge moyen des patients en médecine et en chirurgie dans différents types d'établissements de santé?",23,False,False,False,False,False,descriptive_general,2,2,0,False
+171,"Comment varient les prix entre les classes de véhicules chez les différents opérateurs de péages?",15,False,False,False,False,False,descriptive_general,None,None,0,False
+172,"Quelles informations trouve-t-on dans un bordereau de gestion budgétaire concernant les codes collectivités et les codes budgets ?",18,False,False,False,False,False,descriptive_general,4,1,-3,False
+173,"Comment se répartit le trafic aérien entre les liaisons internationales et les liaisons intérieures en France ?",17,False,False,False,False,False,descriptive_general,1,2,1,True
+174,"Comment se répartit la dette à long terme d'une entreprise entre les dettes courantes et non courantes pour l'année 2006 ?",21,True,False,False,False,False,specific_entity_lookup,None,None,0,False
+175,"quelle radio a pour fréquence 86.2 ?",7,True,False,False,False,False,specific_entity_lookup,2,2,0,False
+176,"Quelle a été l'évolution de la dépense courante en millions d'euros entre 2000 et 2011 en France?",17,True,False,False,False,False,specific_entity_lookup,3,1,-2,False
+177,"Quel est le budget d'acquisition moyen pour les collections d'imprimés dans les grandes institutions de prêt de livres?",18,False,False,False,True,False,specific_entity_lookup,2,4,2,False
+178,"Comment ont fluctué les chiffres du transport routier de voyageurs de 2013 à 2014 ?",15,True,False,False,False,False,specific_entity_lookup,3,3,0,False
+179,"Quelle est l'évolution du nombre de tués dans les accidents de la route en France entre 2015 et 2020?",19,True,False,False,False,False,specific_entity_lookup,1,2,1,True
+180,"Quelle est la fréquence des trains TER et Intercités à la Gare de Bercy durant la journée et la soirée?",20,False,False,False,True,False,specific_entity_lookup,1,4,3,True
+181,"Quelle chaîne de télévision a eu le taux de reprise des programmes le plus élevé en Mars 2010 ?",19,True,False,False,False,False,specific_entity_lookup,3,2,-1,False
+182,"Quel est le nombre de titres publiés dans le domaine des lettres et langues en 2013 ?",17,True,False,False,False,False,specific_entity_lookup,3,1,-2,False
+183,"Quels sont les principaux postes de dépenses externes pour les compagnies aériennes?",12,False,False,False,False,False,descriptive_general,7,None,4,False
+184,"Quel type de dette correspond à la plus grosse partie de la dette financière totale ?",16,False,False,False,False,False,descriptive_general,2,1,-1,False
+185,"Quelle est l'évolution du pourcentage de logements considérés comme non décents en France entre 2016 et 2017 ?",18,True,False,False,False,False,specific_entity_lookup,4,1,-3,False
+186,"Combien de logements mesuraient plus de 100 mètres carrés en 2010?",11,True,False,False,False,False,specific_entity_lookup,2,3,1,False
+187,"Quels sont les numéros de téléphone de certaines adresses spécifiques dans le premier arrondissement de Paris ?",17,False,False,False,False,True,specific_entity_lookup,1,2,1,True
+188,"Quels sont les pourcentages de variation de la part des logements de moins de 40 m² en collectif au cours des années 2000 ?",24,True,False,False,False,False,specific_entity_lookup,3,3,0,False
+189,"Comment ont évolué les coûts de carburant pour les avions et les charges externes dans le secteur aéronautique au cours des dernières années ?",24,False,False,False,False,False,descriptive_general,7,6,-1,False
+190,"Quelle est l'évolution du nombre de bénéficiaires de l'ACTP et de la PCH de 2006 à 2020?",17,True,False,False,True,False,specific_entity_lookup,1,1,0,False
+191,"Peut-on trouver des exemples de structures de primes basées sur l'égalité ou la performance dans les grandes entreprises ?",19,False,False,False,False,False,descriptive_general,1,None,10,True
+192,"Quelles sont les proportions de populations dans les villes selon différentes tranches de taille d'habitants?",15,False,False,False,False,False,descriptive_general,5,6,1,False
+193,"Quel est le taux de contrats collectifs dans les institutions de prévoyance qui sont pris en charge de 1 à 90 jours ?",23,True,False,False,False,False,specific_entity_lookup,1,1,0,False
+194,"Comment a évolué la marge d'EBITDAR pour une certaine société au cours d'un trimestre spécifique?",15,False,False,False,True,False,specific_entity_lookup,2,2,0,False
+195,"Quelles sont les différentes catégories d'immobilisations comptabilisées dans les bilans des entreprises ?",13,False,False,False,False,False,descriptive_general,1,5,4,True
+196,"En 2004, quel était la part de l'énergie dans les dépenses courantes ?",13,True,False,False,False,False,specific_entity_lookup,7,3,-4,False
+197,"Quelle est l'évolution du nombre de magasins de la chaîne 'HM Libertad' en Argentine entre septembre 2019 et juin 2020?",20,True,False,False,True,False,specific_entity_lookup,1,3,2,True
+198,"Comment se répartit la durée d'occupation des logements entre locataires et propriétaires?",12,False,False,False,False,False,descriptive_general,1,6,5,True
+199,"Quel est le résultat net du groupe en 2017 ?",10,True,False,False,False,False,specific_entity_lookup,3,1,-2,False
