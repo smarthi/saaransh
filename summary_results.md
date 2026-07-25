@@ -75,7 +75,41 @@ the opposite of the hypothesized direction), **arxivqa `has_color`** (diff +2.54
 hypothesized direction), and **infovqa `has_digit`** (diff −0.52, also opposite direction). Every
 other individual feature does not exclude zero, or has too few samples to test (`has_at` has zero
 matches in all four datasets; `has_color`/`has_identifier_noun` have zero or near-zero matches in
-tabfquad). Full per-dataset console output below (pre-bootstrap, i.e. point estimates only).
+tabfquad).
+
+### Pooled across datasets (stratified bootstrap, `scripts/bootstrap_pooled.py`)
+
+The per-dataset tests above are underpowered for the rarer features (`has_color` n=17/2/4/0 across
+the four datasets, `has_identifier_noun` n=4/0/5/2). This pools each feature's group A/B across all
+four datasets — resampling each dataset's own groups independently first, then combining — so an
+underpowered feature gets one properly-powered test instead of four weak ones. A dataset only
+contributes to a feature's pool if it has ≥5 rows in that group (`MIN_PER_GROUP=5`); the
+per-dataset column shows exactly which datasets qualified.
+
+| feature | per-dataset n (present) | pooled n (present/absent) | diff | CI | excludes 0 |
+|---|---|---|---|---|---|
+| has_digit | docvqa=26, arxivqa=48, infovqa=49, tabfquad=104 | 227/573 | -0.20 | [-0.57, +0.18] | no |
+| has_at | none | insufficient data across all datasets | - | - | - |
+| has_color | docvqa=2(excluded,<5), arxivqa=17, infovqa=4(excluded,<5) | 17/183 | +2.54 | [+0.82, +4.46] | yes |
+| has_quoted_or_acronym | docvqa=27, arxivqa=43, infovqa=31, tabfquad=47 | 148/652 | -0.16 | [-0.57, +0.29] | no |
+| has_identifier_noun | docvqa=4(excluded,<5), infovqa=5, tabfquad=2(excluded,<5) | 5/195 | +3.33 | [-0.24, +7.17] | no |
+| bucket: specific_entity_lookup vs descriptive_general | docvqa=55, arxivqa=96, infovqa=81, tabfquad=126 | 358/442 | +0.15 | [-0.20, +0.52] | no |
+
+**After pooling, the only effect that excludes zero is `has_color` — and it is driven entirely by
+arxivqa.** Only arxivqa had enough color-referencing queries (n=17) to clear the ≥5-per-group
+threshold; docvqa (n=2) and infovqa (n=4) were excluded from the pool as too few, and tabfquad had
+zero such queries. So "has_color is harder for MUVERA" is not a cross-dataset finding — it is an
+arxivqa finding, full stop, and should be reported as such rather than "confirmed across datasets."
+`has_digit`, which had excluded zero in two individual datasets (arxivqa and infovqa, in opposite
+directions from each other), does **not** exclude zero once pooled — those two effects cancel out
+rather than reinforcing each other. The composite `specific_entity_lookup` vs `descriptive_general`
+bucket still does not exclude zero even with full pooled power (358 vs 442 rows). **The honest
+mechanism-level finding from this run is: `has_color` is harder for MUVERA in arxivqa; nothing else
+in the structural-feature set survives pooling.** That is a narrower claim than "specific-entity
+lookups are systematically harder than descriptive questions," and the data doesn't support the
+broader one.
+
+Full per-dataset console output below (pre-bootstrap, i.e. point estimates only).
 
 ### docvqa (calibrated_eigenbasis, k=8, r=8)
 
