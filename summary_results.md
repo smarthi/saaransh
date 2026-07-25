@@ -36,18 +36,46 @@ structural composite: `has_digit`, `has_at`, `has_color`, `has_quoted_or_acronym
 re-run with its own actual best MUVERA config from `muvera_sweep.csv` (not a single config
 assumed across all four).
 
-`specific_entity_lookup` avg rank_delta vs `descriptive_general`, across all four:
+Bootstrap 95% CIs (`scripts/bootstrap_ci.py`, 2000 resamples, seed=0) on the composite bucket gap
+and each individual structural feature, resampling each group independently within dataset:
 
-| dataset | specific_entity_lookup | descriptive_general | diff |
-|---|---|---|---|
-| docvqa | +1.29 (n=55) | +1.19 (n=145) | +0.10 |
-| arxivqa | +0.78 (n=96) | +0.47 (n=104) | +0.31 |
-| infovqa | +0.58 (n=81) | +0.54 (n=119) | +0.04 |
-| tabfquad | +0.81 (n=126) | +0.18 (n=74) | +0.63 |
+| dataset | split | n (group A / B) | diff | CI | excludes 0 |
+|---|---|---|---|---|---|
+| docvqa | bucket: specific_entity_lookup vs descriptive_general | 55/145 | +0.10 | [-0.73, +1.00] | no |
+| docvqa | has_digit (present vs absent) | 26/174 | -0.03 | [-1.09, +1.22] | no |
+| docvqa | has_at (present vs absent) | 0/200 | - | too few samples | - |
+| docvqa | has_color (present vs absent) | 2/198 | - | too few samples | - |
+| docvqa | has_quoted_or_acronym (present vs absent) | 27/173 | +0.05 | [-0.99, +1.29] | no |
+| docvqa | has_identifier_noun (present vs absent) | 4/196 | +0.29 | [-1.30, +2.59] | no |
+| arxivqa | bucket: specific_entity_lookup vs descriptive_general | 96/104 | +0.31 | [-0.31, +0.95] | no |
+| arxivqa | has_digit (present vs absent) | 48/152 | -0.49 | [-0.99, -0.01] | yes |
+| arxivqa | has_at (present vs absent) | 0/200 | - | too few samples | - |
+| arxivqa | has_color (present vs absent) | 17/183 | +2.54 | [+0.80, +4.54] | yes |
+| arxivqa | has_quoted_or_acronym (present vs absent) | 43/157 | -0.40 | [-0.95, +0.21] | no |
+| arxivqa | has_identifier_noun (present vs absent) | 0/200 | - | too few samples | - |
+| infovqa | bucket: specific_entity_lookup vs descriptive_general | 81/119 | +0.04 | [-0.56, +0.65] | no |
+| infovqa | has_digit (present vs absent) | 49/151 | -0.52 | [-0.95, -0.10] | yes |
+| infovqa | has_at (present vs absent) | 0/200 | - | too few samples | - |
+| infovqa | has_color (present vs absent) | 4/196 | +0.71 | [-2.41, +5.38] | no |
+| infovqa | has_quoted_or_acronym (present vs absent) | 31/169 | +0.03 | [-0.87, +1.08] | no |
+| infovqa | has_identifier_noun (present vs absent) | 5/195 | +3.33 | [-0.28, +7.05] | no |
+| tabfquad | bucket: specific_entity_lookup vs descriptive_general | 126/74 | +0.63 | [-0.09, +1.37] | no |
+| tabfquad | has_digit (present vs absent) | 104/96 | +0.50 | [-0.28, +1.31] | no |
+| tabfquad | has_at (present vs absent) | 0/200 | - | too few samples | - |
+| tabfquad | has_color (present vs absent) | 0/200 | - | too few samples | - |
+| tabfquad | has_quoted_or_acronym (present vs absent) | 47/153 | -0.03 | [-0.89, +0.88] | no |
+| tabfquad | has_identifier_noun (present vs absent) | 2/198 | - | too few samples | - |
 
-`specific_entity_lookup` is higher than `descriptive_general` in all four datasets, though the
-gap ranges from small (docvqa, infovqa) to substantial (arxivqa, tabfquad). Full per-dataset
-console output below.
+**The composite `specific_entity_lookup` vs `descriptive_general` gap does not exclude zero in any
+of the four datasets** — the consistent positive point-estimate direction reported in an earlier
+version of this table is not statistically distinguishable from noise at n=200/dataset. Of the 20
+individual-feature comparisons with enough samples to test, exactly three exclude zero:
+**arxivqa `has_digit`** (diff −0.49, i.e. digit-containing queries do *better* under MUVERA there,
+the opposite of the hypothesized direction), **arxivqa `has_color`** (diff +2.54, confirms the
+hypothesized direction), and **infovqa `has_digit`** (diff −0.52, also opposite direction). Every
+other individual feature does not exclude zero, or has too few samples to test (`has_at` has zero
+matches in all four datasets; `has_color`/`has_identifier_noun` have zero or near-zero matches in
+tabfquad). Full per-dataset console output below (pre-bootstrap, i.e. point estimates only).
 
 ### docvqa (calibrated_eigenbasis, k=8, r=8)
 
