@@ -51,3 +51,28 @@ def evaluate(ranked: np.ndarray, qrels: dict[int, set[int]]) -> dict[str, float]
         "ndcg@5": ndcg_at_k(ranked, qrels, 5),
         "mrr@10": mrr(ranked, qrels, 10),
     }
+
+
+def evaluate_per_query(ranked: np.ndarray, qrels: dict[int, set[int]], k: int = 5) -> list[dict]:
+    """Same signal as evaluate(), but one row per query instead of an aggregate.
+
+    Adds `gold_rank`: 1-indexed position of the first relevant doc in `ranked`,
+    or None if it fell outside the retrieved list entirely. This is the field
+    that makes failure analysis possible — you can diff gold_rank across arms
+    per query instead of only comparing two floats.
+    """
+    rows: list[dict] = []
+    for qi, row in enumerate(ranked):
+        rel = qrels.get(qi, set())
+        row_list = row.tolist()
+        gains = [1.0 if d in rel else 0.0 for d in row_list[:k]]
+        idcg = sum(1.0 / np.log2(i + 2) for i in range(min(len(rel), k)))
+        gold_rank = next((i + 1 for i, d in enumerate(row_list) if d in rel), None)
+        rows.append({
+            "qi": qi,
+            "recall@1": 1.0 if rel and row_list[0] in rel else 0.0,
+            "recall@5": 1.0 if rel and (rel & set(row_list[:5])) else 0.0,
+            f"ndcg@{k}": (sum(g / np.log2(i + 2) for i, g in enumerate(gains)) / idcg) if idcg > 0 else 0.0,
+            "gold_rank": gold_rank,
+        })
+    return rows

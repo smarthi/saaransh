@@ -55,7 +55,9 @@ def extract_colqwen2_bags(
     return run(images, "image"), run(queries, "query")
 
 
-def save_cache(path: str | Path, doc_bags, query_bags, qrels: dict[int, set[int]], meta: dict) -> None:
+def save_cache(path: str | Path, doc_bags,
+               query_bags, qrels: dict[int,
+        set[int]], meta: dict, query_texts: list[str] | None = None) -> None:
     path = str(path)
     np.savez(
         path,
@@ -64,6 +66,7 @@ def save_cache(path: str | Path, doc_bags, query_bags, qrels: dict[int, set[int]
     )
     side = dict(meta)
     side["qrels"] = {str(k): sorted(v) for k, v in qrels.items()}
+    if query_texts is not None: side["query_texts"] = list(query_texts)
     Path(path + ".meta.json").write_text(json.dumps(side))
 
 

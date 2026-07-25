@@ -196,7 +196,7 @@ def cache_main() -> None:
     Path(args.out).parent.mkdir(parents=True, exist_ok=True)
     meta = {"source": args.corpus or args.vidore, "token_dim": args.token_dim,
             "n_docs": len(doc_bags), "n_queries": len(query_bags)}
-    save_cache(args.out, doc_bags, query_bags, qrels, meta)
+    save_cache(args.out, doc_bags, query_bags, qrels, meta, query_texts=queries)
     print(f"wrote {args.out}.npz  (+ .meta.json)")
 
 
