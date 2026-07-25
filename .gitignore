@@ -1,2 +1,5 @@
 /model_cache/
 /cache/
+__pycache__/
+results/*/cache.npz
+results/*/cache.meta.json

@@ -1,0 +1,201 @@
+qi,query,n_words,bucket,ceiling_rank,muvera_rank,rank_delta,ceiling_ok_muvera_lost
+0,"Based on the graph, what is the impact of correcting for fspec not equal to 1 on the surface density trend?",21,other,1,1,0,False
+1,"Based on the progression from JUL10 to FEB11Q, what trend can be observed in the thread participation?",17,other,1,1,0,False
+2,"What physical phenomenon could the pattern of lines on the right side of the figure represent?",16,what,2,4,2,False
+3,"What is the approximate uv-distance where the measured real component starts to significantly deviate from the models shown?",18,what,1,1,0,False
+4,"In which subfigures does the average arrival flux (<v>) appear to have a direct relationship with betweenness?",17,other,1,1,0,False
+5,"Based on the figure, how does changing the parameter V from 0.1 to 0.2 affect the system's transition to disorder for N=200?",22,other,1,3,2,True
+6,"What is the main variable being analyzed on the x-axis of these graphs?",13,what,None,None,0,False
+7,"Based on the graph, how does the von Neumann entropy of the Hawking radiation (\( S^{HR}_{vN} \)) behave as the parameter \( \Omega_0 \) increases after \( \Omega_{Page} \)?",29,other,1,1,0,False
+8,"What does the figure primarily illustrate?",6,what,None,None,0,False
+9,"What role does asymmetrical feedback play in the context of Figure C?",12,what,1,1,0,False
+10,"Based on the figure, which statement is true about the relationship between \( (K')^T \) and \( V \)?",19,other,1,1,0,False
+11,"What can be inferred about the relationship between \( \delta(T) \) and r from the rightmost graph?",17,what,1,1,0,False
+12,"What feature of the graph allows for the comparison of different \(\eta\) values?",13,what,3,2,-1,False
+13,"What inputs does the Monocular Reconstruction process require to generate an expression in the given system?",16,what,1,1,0,False
+14,"Which of the following best describes the behavior of the solid line function as E approaches 10?",17,which,2,1,-1,False
+15,"What does the trend of \( Q_e / Q^{TM}_{lb} \) indicate about the system performance over the iterations?",18,what,1,1,0,False
+16,"If 'S' represents species richness, what can be deduced about the biodiversity of the ecosystem as 'S' increases?",18,other,1,1,0,False
+17,"If the variable on the x-axis represents time, what can be inferred about the rate of change of the parameter over time?",22,other,3,2,-1,False
+18,"Based on the diagram, what is a possible consequence of the 'Network Down' state for the network's performance?",18,other,1,1,0,False
+19,"Based on the magnetic hysteresis loops presented, what can be inferred about the anisotropy of the CoO/Pt multilayers?",18,other,1,1,0,False
+20,"What does the method described in section c) 'force matching without forces (this method)' primarily eliminate in the process of force matching?",22,what,1,1,0,False
+21,"What does the black sphere with an arrow represent in these diagrams?",12,what,1,1,0,False
+22,"What type of data visualization is depicted in the image?",10,what,None,None,0,False
+23,"What is the approximate Z_i score for the lowest ranked motif in Figure C?",14,what,1,1,0,False
+24,"What does the graph suggest about the performance of NS algorithm as compared to the OPT algorithm in terms of secrecy capacity at SNR = 20 dB for K=10?",29,what,1,1,0,False
+25,"What does the figure suggest is the relationship between the scene graph mapping (HGM) and the encoders (G^x_Enc and G^y_Enc)?",20,what,1,1,0,False
+26,"Based on the scatter plot, what is the approximate range of \(\Delta E/E_R\) values when \(\phi\) is between 0 and \( \pi/2 \)?",23,other,1,1,0,False
+27,"If \( \tau_1 / r_0 \) represents a time scale in the evolution of the Schwarzschild-AdS black hole, what does the graph suggest about \( r_h / r_0 \) at this time scale compared to \( \tau_c / r_0 \)?",40,other,1,1,0,False
+28,"Based on the RadQA context, which cervical spine levels show the most severe degenerative changes?",15,other,1,1,0,False
+29,"Based on the progression from the initial state to Setup (E), what can be inferred about the magnetic field's behavior over time?",22,other,1,1,0,False
+30,"At what approximate x-axis value does the purple diamond dataset begin to level off?",14,other,3,None,8,False
+31,"What does the dashed line represent in this layered network diagram?",11,what,6,None,5,False
+32,"What is the significance of the two different sizes mentioned in figure (c)?",13,what,6,None,5,False
+33,"What is the value of \( k \) at the point where \( P_f \) starts to increase in Figure a?",21,what,1,1,0,False
+34,"For which dataset is the most likely number of communities greater than 10?",13,other,1,1,0,False
+35,"What does the dashed red line in the figure represent?",10,what,2,None,9,False
+36,"According to the diagram, which component is NOT part of the scalable and efficient execution with Region Templates?",18,other,1,2,1,True
+37,"Compared to figures a2 and b2, what is unique about the bending stiffness in figure c2?",16,other,1,1,0,False
+38,"Based on the data, what can be inferred about the relationship between \( t_{L0} \) and \( L \) for different radii of the coil?",25,other,1,1,0,False
+39,"What does the intersection point of all three wave functions (2s, 1p, and 1d) closest to r = 0 indicate about their behavior?",23,what,1,1,0,False
+40,"What is the primary visual focus indicated by the red arrows in the majority of the frames?",17,what,1,1,0,False
+41,"What does the intersection of the two trend lines on the graph indicate?",13,what,9,None,2,False
+42,"What does the term \( d^{lim} \) in the figure most likely represent?",13,what,1,1,0,False
+43,"Which equation provides a closer fit to the simulation results based on the figure?",14,which,1,1,0,False
+44,"What can be inferred about the variable \( \phi \) as \( t\omega_r \) increases beyond the range shown in the graph?",22,what,1,1,0,False
+45,"In the depicted model architecture, what is the primary role of the 'Layerwise Generator' component?",15,other,1,1,0,False
+46,"Based on the data presented in panel d), what is the trend of channel width as the applied magnetic field increases?",21,other,1,1,0,False
+47,"What is the purpose of the voxel norm and global norm in the pre-training and fine-tuning processes depicted in the figure?",21,what,1,1,0,False
+48,"What does the slope of the line in figure (b) approximately indicate?",12,what,2,5,3,False
+49,"Based on the graph, how does \( N' \) (in thousands) relate to \( N_0^{2/5} \) for \( N_0^{2/5} < 80 \)?",22,other,1,1,0,False
+50,"What does the solid red line represent in the figure?",10,what,2,None,9,False
+51,"Which family has a consistent performance close to 100% across both Compound and QBFEval'20 benchmarks?",15,which,1,1,0,False
+52,"Based on the vector fields shown in the bottom portion of the figure, what characteristic changes from panel A to panel D?",22,other,1,None,10,True
+53,"Based on the trends in panel (a), what can be inferred about the behavior of noise power as frequency approaches zero?",21,other,1,1,0,False
+54,"Which molecule is at the center of the depicted biochemical process?",11,which,1,1,0,False
+55,"Based on the diagram in section (b), which concept is being visually represented through the connections in the coordinate space?",20,other,1,1,0,False
+56,"Based on the behavior of the functions in the figure, what is a likely physical context of the graphs?",19,other,1,5,4,True
+57,"As per the figure, what is the relationship between the primary energy of cosmic rays and the signal-to-noise ratio (SNR) at a fixed count rate?",25,other,1,1,0,False
+58,"At what total utilization does the proposed algorithm begin to diverge significantly from the exhaustive search in terms of the percentage of schedulable task sets?",25,other,1,1,0,False
+59,"Which figure shows a signal that might be characteristic of intermittent interference or breaks in transmission?",16,which,1,1,0,False
+60,"What is the relationship between the elements labeled 'x' and 'y' on the left side of the figure and the elements 'a', 'b', 'c' on the right side of the figure?",31,what,1,3,2,True
+61,"In the model architecture presented, what is the function of the 'Attention-Based Relationship Reasoning'?",14,other,1,1,0,False
+62,"In Figure (b), which process shows the least variation in the coefficient of performance \( \varepsilon \) over the entire range of τ?",23,other,1,1,0,False
+63,"At what approximate oxygen coverage does the energy difference (E) between ferromagnetic (FM) and antiferromagnetic (AF) structures reach its maximum based on the trends shown?",25,other,1,1,0,False
+64,"Based on the figure, what can be inferred about the location of the observed subject?",15,other,3,8,5,False
+65,"Based on the graph, after how many years does the concentration for α = 0.2 fall below 1 mg/L?",19,other,1,1,0,False
+66,"What might the purpose of the white silhouette against the black background be?",13,what,1,3,2,True
+67,"At approximately what value of z does the data indicate that the halo mass \( M_{cut} \) (fit b\_ln) surpasses \( 10^{13} \ h^{-1}M_{\odot} \)?",25,other,1,1,0,False
+68,"What does the graph indicate about the relationship between \( \langle r(t) \rangle \) and time (t) during steady-state conditions?",20,what,1,1,0,False
+69,"What is the role of 'SCAI-DM' in the depicted workflow?",10,what,1,1,0,False
+70,"Based on the color coding in the figure, which range of radio detection fraction is most common for the lowest photometric rms values?",23,other,1,1,0,False
+71,"According to the figure, what distinguishes the Unfolded RED (U-RED) depicted in part (b) from the SGD-Net in part (a)?",20,other,1,1,0,False
+72,"What do the dotted lines across the \( y_l(u) \) curve represent?",12,what,1,1,0,False
+73,"Based on the diagram, which element directly influences the output \( \psi_t \)?",13,other,1,1,0,False
+74,"What does the figure suggest about the relationship between frequency and the variable S?",14,what,2,3,1,False
+75,"What does the divergence of lines after Jt = 2 suggest about the system's behavior in figure (b)?",18,what,1,1,0,False
+76,"Based on the angles shown, what range of angles does the X-ray source move through during the imaging process?",19,other,1,1,0,False
+77,"How does the time evolution of the wave function's probability density in figure (f) compare to that in figure (c)?",20,how,1,1,0,False
+78,"The cells in figure c are most consistent with which of the following stages of erythropoiesis?",16,other,1,1,0,False
+79,"At approximately what energy does the peak of the S(E) occur according to the graph?",15,other,1,1,0,False
+80,"What does the dashed horizontal line at g-r = 0.6 represent in this scatter plot?",15,what,1,1,0,False
+81,"Which point is likely to have the smallest radius circle if the circles represent distances from the respective points to the query point?",23,which,1,1,0,False
+82,"As x increases from 0 to 0.15, what trend is observable in the figure for both DMRG and MA methods?",20,other,1,1,0,False
+83,"Which simulation data set shows a trend of alignment angles clustering around both 60° and -60°?",16,which,1,1,0,False
+84,"What can be inferred about the trend of the measured variable after January 16th?",14,what,1,1,0,False
+85,"Based on the inset graphs, what is the characteristic behavior of the transition percentage with respect to velocity?",18,other,1,1,0,False
+86,"What does the graph suggest about the performance of Attribute SBM and Regular SBM as the Pin/Pout ratio increases?",19,what,1,1,0,False
+87,"Which qubit configuration shows the greatest decline in reward value by the end of 1600 measurement steps?",17,which,1,1,0,False
+88,"What is the significance of the blue polyhedra in figure (c)?",11,what,1,1,0,False
+89,"What does the progression of stages 1 to 3 in the LSM likely illustrate?",14,what,1,1,0,False
+90,"What is the result of the operation between X_S and X_A according to figure a)?",15,what,1,1,0,False
+91,"What can be inferred about the system's behavior during the 'Initial transient' phase as opposed to the 'Periodic regime'?",19,what,1,1,0,False
+92,"In the context of this diagram, what does the process of backpropagation achieve?",13,other,1,1,0,False
+93,"Based on the graph, how does the value of \( 10^6x_{30} \) change with an increase in \( 10^6x_{29} \)?",20,other,1,1,0,False
+94,"What does the red spiral in the figure represent in relation to the perihelion distance \( q \) and inclination \( i \)?",23,what,1,1,0,False
+95,"Which function family shows a decreasing trend after \( r = 10^1 \)?",13,which,1,1,0,False
+96,"In the context of the figure, what does the transition from the 'Virgin configuration' to the 'Reference configuration' likely represent?",20,other,1,1,0,False
+97,"What pattern can be discerned from the heatmap in Figure C regarding the page ranks of historical figures on Wikipedia across different centuries?",23,what,1,1,0,False
+98,"Based on figure (e), what can be inferred about the use of 'Nano D RF Connectors'?",16,other,1,1,0,False
+99,"What can be inferred about the stability of the coefficients over time when comparing the plots in figures A and E?",21,what,1,6,5,True
+100,"What is the purpose of the buffers in this diagram?",10,what,1,1,0,False
+101,"What trend is observed in the density of states (DOS) peaks as the number \( N \) of particles increases?",20,what,2,2,0,False
+102,"What is the primary difference between the standard pre-training and the proposed pre-training method as illustrated in the figure?",19,what,1,1,0,False
+103,"Based on figure (b), which statement is true regarding the relationship between FT1 and FT2?",15,other,1,1,0,False
+104,"According to the data presented in figure a, which dimension showed the greatest difference in scoring between the 'Arhat' and 'Gold Mask' conditions?",23,other,1,1,0,False
+105,"Based on the geometry shown in figure (a), what does the blue rhombus most likely represent?",16,other,2,None,9,False
+106,"Which band exhibits a clear bandgap in panel (b)?",9,which,1,4,3,True
+107,"What does the intersection of lines labeled \( E_1, E_2, E_3, \) and \( E_4 \) represent in this space-time diagram?",21,what,1,1,0,False
+108,"Which statement best describes the approximation's accuracy compared to the exact values?",12,which,1,1,0,False
+109,"What is the trend of the temperature as a function of redshift z as shown in the graph?",18,what,2,2,0,False
+110,"Based on the phase space plots in figure (b), what can be inferred about the state of the system at point 2?",22,other,1,None,10,True
+111,"In the experiment results shown, which graph represents the frequency response of the AlN-on-sapphire device?",15,other,1,1,0,False
+112,"What does the y-axis represent in the given figure?",9,what,4,2,-2,False
+113,"What does the graph suggest about the relationship between \( e(Nw) \) and \( Nw \)?",16,what,1,1,0,False
+114,"Which statement is true based on the relationship between the ensemble gap and individual classifier gap in the CIFAR 10 ensemble models?",22,which,1,1,0,False
+115,"What does the graph suggest about the scaling of different operators in the large-N limit?",15,what,1,10,9,True
+116,"Based on the trends shown in the figure, what can be inferred about the behavior of \( n(k) \) as \( k/k_F^0 \) increases?",24,other,1,1,0,False
+117,"If the colors in the image represent different categories, what can be inferred about the category represented by the color cyan?",21,other,1,None,10,True
+118,"What can be inferred about the physical property represented in the figure as moving from the outer edges towards the center?",21,what,8,5,-3,False
+119,"What does the black area labeled 'q' in figure (a) most likely represent?",13,what,1,1,0,False
+120,"What trend can be observed as the parameter γ2 increases from 0.0 to 1.0 in the graph?",17,what,1,1,0,False
+121,"What does the 'seed assembly' section in the diagram most likely represent?",12,what,1,1,0,False
+122,"In Figure (a), what does the transition from 'Hegemonic Consensus' to 'Segregated Consensus' as α increases indicate?",17,other,1,1,0,False
+123,"Based on the trend line overlaid on the data, what can be inferred about the relationship between I magnitude and V-I color?",22,other,1,1,0,False
+124,"If the trend of the 'UPPER LIMIT' curve continues beyond redshift z of 2, which of the following is a reasonable prediction?",22,other,1,1,0,False
+125,"What does the concept of 'Few Bodyness' in the figure indicate?",11,what,1,1,0,False
+126,"What interaction is represented by the solid blue line in Figure (a)?",12,what,1,1,0,False
+127,"Based on the trend in the graph, which method has shown a greater degree of uncertainty in the measurement of the Hubble constant over the years?",26,other,1,1,0,False
+128,"In figure (b), the 'Vg' stands for which of the following in the context of the Quantum Dot Analogue?",19,other,1,1,0,False
+129,"What does the color scale in panel (b) represent?",9,what,7,None,4,False
+130,"How is the 'smallest loss' determined in Mechanism 1?",9,how,1,1,0,False
+131,"What function do the 'R_series' components in the 'warm(er) electronics' section likely serve in this circuit?",16,what,1,1,0,False
+132,"Based on the figure, at which values of θ does the probability density appear to be the lowest?",18,other,1,1,0,False
+133,"What does Δt in figure (a) represent?",7,what,1,1,0,False
+134,"Based on the figure, which statement is true regarding the direction of wave propagation?",14,other,2,6,4,False
+135,"Based on the figure, which statement is accurate regarding the parcellation and time course extraction step in fMRI analysis?",19,other,1,1,0,False
+136,"What time of day does the scene depicted in figure (a) most likely represent?",14,what,1,1,0,False
+137,"What conclusion can be drawn about the noise level in the z-direction compared to the x-direction from the sensitivity graph in figure B?",23,what,1,1,0,False
+138,"What trend is depicted by the solid lines in the top graph?",12,what,2,1,-1,False
+139,"What pattern can be observed when comparing the distribution of points in sections a) and d)?",16,what,1,1,0,False
+140,"Based on the figure, what is the relationship between \( u(t) \) and \( \lambda(t) \)?",16,other,1,1,0,False
+141,"What does the left side of the diagram indicate in terms of experimental results?",14,what,3,2,-1,False
+142,"Which process is depicted in part C of the figure?",10,which,2,2,0,False
+143,"Which technique displays the greatest reduction in 'Time (s)' when analyzed with HURDAT data according to the lower graph?",19,which,1,1,0,False
+144,"Based on the energy levels represented in the figure, which oxygen isotope has the highest energy level for the ground state?",21,other,1,1,0,False
+145,"Which statement best describes the trend observed as λ increases from 0.1 to 0.7?",14,which,1,1,0,False
+146,"What can be inferred about the state \( \varepsilon_{\alpha_1} \) in comparison to \( \varepsilon_{\alpha_2} \)?",16,what,1,1,0,False
+147,"What does the red curve in both graphs represent?",9,what,1,1,0,False
+148,"Based on the figure, which model performs best under the 'Extreme low-shot regime' in terms of robustness and validation accuracy?",20,other,1,1,0,False
+149,"What does the evolution of the density profiles over time suggest about the system's behavior?",15,what,1,1,0,False
+150,"Which array configuration demonstrates the highest variability in spectral efficiency as the aperture increases?",14,which,1,1,0,False
+151,"Based on the temperature-dependent photoluminescence (PL) spectra shown in the figure, which transition peak consistently appears across different materials and temperatures?",21,other,1,1,0,False
+152,"In figure (a), which curve represents the highest efficiency at an average output number of photons \(\bar{n}\) of 10?",19,other,1,1,0,False
+153,"What trend can be observed when the temperature increases for the ethylene glycol-glycerol mixture at a DASPI concentration of 0.01 mM?",21,what,1,1,0,False
+154,"What is the primary purpose of the Attention Module in this neural network model?",14,what,1,2,1,True
+155,"What variable is being kept constant in all three simulations presented in the figures?",14,what,6,2,-4,False
+156,"Considering the Adjacent NK-Landscape problem, which approach requires the smallest minimally required population size across all time distributions in the steady-state model?",22,other,1,1,0,False
+157,"Which city shows a combined coverage probability for O2 and Vodafone that is more consistent across different methods?",18,which,1,1,0,False
+158,"By examining figure (c), what can be inferred about the crystal structure's symmetry?",13,other,2,1,-1,False
+159,"Based on the trends shown in graph 'B', which physical quantity is being measured, and how is it behaving over the observed period?",23,other,1,1,0,False
+160,"What can be inferred about the consistency of the data across the different methodologies used in the graphs?",18,what,None,None,0,False
+161,"In the process shown, which step involves the use of confidence levels to refine labels?",15,other,1,3,2,True
+162,"Based on the top graph, what can be inferred about the performance of MF5 box15 compared to SP box15 at a separation of 1 arcsec?",25,other,1,1,0,False
+163,"What does the symbol 'ℓ' represent in figure (b)?",9,what,1,1,0,False
+164,"Based on the trend of the F1-measure for the test set (validation not allowed), what can be inferred about the model's performance as more training data is used?",28,other,1,1,0,False
+165,"Based on subplot (c), what can be inferred about the relationship between the dimensionless quantity (t^0.21) and time?",18,other,1,2,1,True
+166,"What does the symbol \( \chi_0 \) in the figure represent?",11,what,2,1,-1,False
+167,"Based on the figure, what does '+J' and '-J' signify in the master equation system?",15,other,1,1,0,False
+168,"What does the red dashed line with square markers in the graph most likely represent?",15,what,1,6,5,True
+169,"What does the contour plot within the image most likely represent?",11,what,1,7,6,True
+170,"Based on the progression from A to C, what does the blue square in component B likely indicate?",18,other,1,1,0,False
+171,"Based on the progression from Step 1 to Step 100, what can be inferred about the data points' distribution for each category?",22,other,1,1,0,False
+172,"In figure (b), what does the parameter 'r' likely represent in the context of the branching structure?",17,other,1,1,0,False
+173,"What feature of the complex energy spectrum can be inferred from figures (b) and (e)?",15,what,1,5,4,True
+174,"What does the parameter 'd' denote in figure (a)?",9,what,1,1,0,False
+175,"What does the symbol 'I' in the diagram represent within the context of the system?",15,what,1,1,0,False
+176,"Based on the bottom figure, what can be concluded about the BAT Rate as a function of radius?",18,other,1,1,0,False
+177,"What conclusion can be drawn about the inner product distribution for the 'Sphere' from figure c)?",16,what,1,1,0,False
+178,"Based on the figure, what is the result of combining the CNN block output and the attention guide?",18,other,1,1,0,False
+179,"Based on figure (b), how does the response for A = Kc compare to A = Ks for Φ = 2?",21,other,1,1,0,False
+180,"What does \( \beta \) likely symbolize in this figure?",10,what,2,1,-1,False
+181,"What observation can be made about the attention distance of clean AIs when comparing clean, poisoned, and spurious inputs?",19,what,1,1,0,False
+182,"Based on the scatter of points in the figure, what can be inferred about the measurement precision in the central region?",21,other,5,2,-3,False
+183,"At which threshold density (n_thr) does the cumulative fraction of emission reach 50%?",13,other,1,1,0,False
+184,"Assuming each point within the figures represents a data point from an experiment, which of the following statements is supported by the visual data?",24,other,1,1,0,False
+185,"What is the role of the coordinate \( p \) in the figure?",13,what,1,None,10,True
+186,"Which statement can be inferred about the consistency of grounding accuracy across different layers based on the figure?",18,which,1,1,0,False
+187,"Which of the following statements is supported by the figure 'a'?",11,which,None,10,-1,False
+188,"What does 'M1' most likely represent in this context?",9,what,1,1,0,False
+189,"Which assumption shows a decrease in the median value of False Positives (FP) as the Per-Family Error Rate (PFER) increases?",20,which,1,1,0,False
+190,"What trend does the magnitude response of the system exhibit as the frequency increases, according to Figure b?",18,what,1,1,0,False
+191,"What do the dashed lines in figure (b) most likely represent?",11,what,2,5,3,False
+192,"Approximately how many distinct levels can be observed in the \( \delta \) variable in Figure (a)?",17,other,1,1,0,False
+193,"At what altitude is the HAPS platform operating according to the diagram?",12,other,1,1,0,False
+194,"What can be inferred about the regions labeled by \( h_{w_{k-1}} \) and \( h_{w_k} \) in Figure (c)?",19,what,1,1,0,False
+195,"What does panel (a) of the figure primarily illustrate?",9,what,2,None,9,False
+196,"If you were to extrapolate the trend observed in the graph, which of the following outcomes would be most likely at temperatures slightly above 3 K?",26,other,1,6,5,True
+197,"What does the value 'z' represent in the context of these images?",12,what,1,1,0,False
+198,"Based on the scale bars provided, what can be inferred about the experimental setup in figure (c)?",17,other,1,1,0,False
+199,"What does the point labeled 'b, d' on the graph in subfigure a) indicate about the system being studied?",19,what,1,1,0,False

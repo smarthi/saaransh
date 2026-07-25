@@ -1,0 +1,201 @@
+qi,query,n_words,bucket,ceiling_rank,muvera_rank,rank_delta,ceiling_ok_muvera_lost
+0,"Which category of apps enjoy the least percentage of popularity?",10,which,1,3,2,True
+1,"Who is the CEO of JP Morgan?",7,who,1,None,10,True
+2,"What percent of recruiters make most of their hires through LinkedIn?",11,what,1,1,0,False
+3,"In 2010 , what percentage of recruitments used linkedin?",9,other,2,2,0,False
+4,"Which social media platform has the least number of active users?",11,which,1,1,0,False
+5,"Who founded Facebook?",3,who,1,1,0,False
+6,"What percentage of parents want to receive text messages from there child teacher?",13,what,1,1,0,False
+7,"which social media platform is the most common among health organizations?",11,which,1,2,1,True
+8,"Which is the second most popular social media job title according to the pie chart?",15,which,1,1,0,False
+9,"How many social media holidays are there in the month of January?",12,how,1,1,0,False
+10,"Which Nonprofit issue is most talked about in Twitter?",9,which,1,1,0,False
+11,"Which social media referred more business than LinkedIn, YouTube, and Google +?",12,which,2,None,9,False
+12,"What percentage of companies do not use two or more networks to connect with prospective employees?",16,what,1,1,0,False
+13,"how many infrastructure in this diagram are new?",8,how,1,1,0,False
+14,"What is the microblog market share of Sina Weibo?",9,what,1,1,0,False
+15,"what is the chance of most people being convinced to buy a product/service after watching the video - likely to buy or unlikely to buy?",25,what,1,1,0,False
+16,"Which company collects only phone number, email address and location (time zone)?",12,which,1,1,0,False
+17,"Through how many ways GERD can diagnose other than Endoscopy?",10,other,1,1,0,False
+18,"Which money management app is common to both iPhone and Android?",11,which,1,1,0,False
+19,"How many daily average trips were completed by Uber as on Dec. 2015?",13,how,1,1,0,False
+20,"Which is the biggest word in the infographic?",8,which,None,None,0,False
+21,"What is the news agency of Turkey?",7,what,1,1,0,False
+22,"how many ships do MSC cruises have?",7,how,1,1,0,False
+23,"What percent of large business organizations were implementing or maintaining cloud computing as per the CDW 2011 Cloud Computing Tracking Poll?",21,what,1,1,0,False
+24,"What was the number of deaths on April 17?",9,what,1,1,0,False
+25,"What percent of Irish citizens are concerned about water pollution?",10,what,1,1,0,False
+26,"What is the value of High-Density Lipoproteins listed in the infographic?",11,what,None,None,0,False
+27,"which state has the highest population - Northern Ireland or Wales?",11,which,1,1,0,False
+28,"What percent of homes have equity below $200,000?",8,what,1,1,0,False
+29,"How much oil is spilled into the ocean every year?",10,how,1,1,0,False
+30,"Which country has the highest carbon footprint in Asia?",9,which,1,1,0,False
+31,"What percent of cricket fans in UAE do not watch cricket on mobile?",13,what,1,1,0,False
+32,"What is the most preferred type of food of Francois du Plessis?",12,what,1,1,0,False
+33,"What percent of internet users use  LinkedIn?",7,what,1,1,0,False
+34,"Tamim Iqbal represents which country",5,other,1,1,0,False
+35,"Which is the second major sector of AI in healthcare?",10,which,1,1,0,False
+36,"With whom has OPI partnered with",6,other,1,1,0,False
+37,"In which locations in Srilanka will the matches be held",10,other,1,1,0,False
+38,"How many years after his first run did DHoni complete 1000 runs",12,how,1,1,0,False
+39,"What is the full form of BCCI",7,what,None,6,-5,False
+40,"What does the regional cold stores use HCMIS for?",9,what,1,1,0,False
+41,"How many teams are there in the Masters Champions League?",10,how,1,3,2,True
+42,"Which sport is followed by the majority of the UAE nationals as per the survey?",15,which,1,1,0,False
+43,"How many centuries were made in 2015?",7,how,1,1,0,False
+44,"What is the halfway-age of CMAs in Canada in 2015?",10,what,1,1,0,False
+45,"Who won the 2015 ICC Cricket World Cup?",8,who,1,1,0,False
+46,"How many baby boomers are retiring?",6,how,1,1,0,False
+47,"who is second in the list of players who score fastest fifty in T20?",14,who,1,1,0,False
+48,"Which country does Irfan Pathan represent?",6,which,1,1,0,False
+49,"what is the second most considerable reason to buy hardcopy of book?",12,what,1,2,1,True
+50,"What  percent of students are receiving learning support in 2016?",10,what,1,1,0,False
+51,"The books Luke and Romans are similar to which popular book of the Bible?",14,other,1,1,0,False
+52,"What is the population of Karachi in 2025?",8,what,1,1,0,False
+53,"How many centuries did Tendulkar make between in 1989 and 1996?",11,how,1,1,0,False
+54,"How many hours in total does it take to read Zech and Micah",13,how,1,1,0,False
+55,"Who qualified for the World Cup first, India or Egypt?",10,who,1,1,0,False
+56,"Who is the author of Cat's Cradle",7,who,1,5,4,True
+57,"At which center does scientists from all across the world work together?",12,other,1,1,0,False
+58,"Which whole grains have a popularity of over 40%",9,which,1,1,0,False
+59,"what is the colour that comes in between green and orange, yellow or red",14,what,3,None,8,False
+60,"How many columns with blue shirts",6,how,4,1,-3,False
+61,"What book is preferred by maximum when reading with a child",11,what,1,1,0,False
+62,"When was the term robot first used",7,when,1,1,0,False
+63,"What is the export turnover when EU removes tax lines in general tariff on Vietnamese goods?",16,what,1,1,0,False
+64,"which area is represented by a smiling face icon?",9,which,1,None,10,True
+65,"What do majority of biola student think about houses of worship favouring candidates",13,what,1,1,0,False
+66,"What is the expected population of the U.S. in 2050?",10,what,1,1,0,False
+67,"Which are the two DC superhero franchises?",7,which,1,1,0,False
+68,"What percent of exam school teachers in America hold a master's degree?",12,what,1,1,0,False
+69,"When is the world population day observed every year?",9,when,1,1,0,False
+70,"What is the speed of Tenergy 80?",7,what,1,1,0,False
+71,"Which is the most populated country in the world as of Oct 31, 2011?",14,which,1,1,0,False
+72,"What is the most hunted type of whales in the Northern Atlantic ocean?",13,what,1,1,0,False
+73,"What was the Chinese population in the U.S. in 2000?",10,what,1,1,0,False
+74,"What is the projected global fertility rate from 2045 until 2050?",11,what,1,1,0,False
+75,"What is Ireland's usually resident population?",6,what,1,1,0,False
+76,"How much time is spent by the U.S population on shopping in a lifespan of 78 years?",17,how,1,1,0,False
+77,"How many people follow Roger Federer on Facebook?",8,how,1,1,0,False
+78,"how many myths about female body building are given in this infographic?",12,how,1,1,0,False
+79,"who was the president when the misery index gone highest?",10,who,1,1,0,False
+80,"Which team does Kobe Bryant play for?",7,which,1,1,0,False
+81,"what is the combined total economy of UK and Germany in trillion dollars?",13,what,1,None,10,True
+82,"Which is the most popular sports among the students according to the survey?",13,which,1,1,0,False
+83,"Which university did Eric Heiden go to?",7,which,1,2,1,True
+84,"what percent of people skipped meal because they couldn't afford or their children could eat?",15,what,1,1,0,False
+85,"What is the hashtag given?",5,what,1,1,0,False
+86,"What percent of national population is single fathers and single mothers?",11,what,1,1,0,False
+87,"What is the Twitter handle of the designer of infographic?",10,what,1,None,10,True
+88,"What percent of men are organised when it comes to money matters?",12,what,1,1,0,False
+89,"What percent of women are college and university presidents?",9,what,1,1,0,False
+90,"Which is the most popular social media platform?",8,which,4,None,7,False
+91,"By what percent did number of female primary income earners increase from 1994 to 2014?",15,other,1,1,0,False
+92,"Which year has the 2-year MBA applications been the least and 1-year MA applicants been the maximum",17,which,1,1,0,False
+93,"What can influence a child's desire to work in any particular profession?",12,what,1,1,0,False
+94,"What % of women were awarded undergraduate CS degreen in 1984",11,what,1,2,1,True
+95,"What % of African adolescent girls miss school during menses",10,what,1,1,0,False
+96,"How many stress management techniques mentioned in this infographic?",9,how,1,1,0,False
+97,"What percentage of women had a scale of 6 or 7 for confidence in political climate?",16,what,1,1,0,False
+98,"In which fields have men outnumbered women in the number of degrees earned?",13,other,4,5,1,False
+99,"What percent of teen social media users post their email address on social media websites in 2006 according to the survey?",21,what,1,1,0,False
+100,"What is the population of women living in London in Millions, 63.2, 32.2, or 4.2?",15,what,1,1,0,False
+101,"Who has won the most number of Grand Slam titles and how many?",13,who,1,1,0,False
+102,"what percentage of online users watch cute/ funny animal clips?",10,what,1,1,0,False
+103,"What percentage of UK adults do not use social media sites?",11,what,1,1,0,False
+104,"What percentage of companies didn't use social media for recruiting?",10,what,1,1,0,False
+105,"what is the second tip given for influencer marketing?",9,what,1,1,0,False
+106,"What percentage of American high schools has not banned use or possession of mobile devices on school grounds?",18,what,1,1,0,False
+107,"When was MySpace launched?",4,when,3,3,0,False
+108,"What is the least time-consuming activity done by small businesses on social media as per the survey?",17,what,1,1,0,False
+109,"Which chemical stimulates a sense of attachment?",7,which,1,1,0,False
+110,"What percent of Pinterest users are male?",7,what,3,6,3,False
+111,"which restaurant has fourth highest number of Google+ followers?",9,which,1,1,0,False
+112,"What percent of Google+ users are female?",7,what,2,1,-1,False
+113,"What percentage of all marketers have found a customer through Twitter?",11,what,1,2,1,True
+114,"in which year was the world's first email sent?",9,other,1,2,1,True
+115,"'Parity Checking' comes under which branch of Computer science?",9,other,1,1,0,False
+116,"Which companies made their foray into social media in 2003?",10,which,5,5,0,False
+117,"What percentage of business to customer companies are likely to use social media for marketing, 68%, 71%, or 66%?",19,what,2,1,-1,False
+118,"What is Leolia JeanJean's universal tennis rating?",7,what,1,1,0,False
+119,"A person working in which data science role gets an average salary  of $65,000?",14,other,1,1,0,False
+120,"Which social networking website is used  for personal use by most of the respondents according to the survey - Twitter, Skype, LinkedIn, Facebook?",23,which,1,7,6,True
+121,"Which year was YouTube launched?",5,which,5,4,-1,False
+122,"In the infographic, how many types of items are shown which are exported from China to US?",17,other,1,1,0,False
+123,"Which is the most trusted channel for brand content?",9,which,1,1,0,False
+124,"What is the number of monthly active users of Instagram as of 12.27.2018?",13,what,1,1,0,False
+125,"What percent of hospitals in the US are participating in social media?",12,what,1,1,0,False
+126,"how many boys are there in the world for 100 girls?",11,how,1,3,2,True
+127,"which is more expensive - bootcamp or CS degree?",9,which,1,1,0,False
+128,"The highest number of soldiers died in which war?",9,other,4,9,5,False
+129,"In which year was the border between the east and west Germany closed?",13,other,1,1,0,False
+130,"what percent of researchers in Chile were men in the duration of 2011-15?",13,what,1,1,0,False
+131,"What percent of people think that demand for data scientists will significantly as well as somewhat outpace the supply of talent?",21,what,1,1,0,False
+132,"What is the average year employee tenure?",7,what,1,1,0,False
+133,"Which is the fifth type of violence against women?",9,which,2,2,0,False
+134,"How many US states have GDP greater than two thousand billion dollars?",12,how,1,1,0,False
+135,"What is the email address provided?",6,what,3,None,8,False
+136,"How many sources are listed?",5,how,None,None,0,False
+137,"Which scale represents the highest windspeed?",6,which,1,1,0,False
+138,"What is the mid-career median pay of a Software architect?",10,what,1,1,0,False
+139,"What is the distance (in light-years) of Vega from earth?",10,what,1,4,3,True
+140,"What was the magnitude of the earthquake that happened in Maule on 2/27/2010?",13,what,1,1,0,False
+141,"How many million hectares of soil in Africa has been affected due to physical degregation?",15,how,1,1,0,False
+142,"Which year did H.G. Wells write the science fiction ' The Time Machine'?",13,which,1,1,0,False
+143,"How many domestic abuse cases happen every 60 seconds?",9,how,1,1,0,False
+144,"Which part of the brain is colored in green?",9,which,1,1,0,False
+145,"What was the number of casualties in the Chancellorsville battle?",10,what,1,2,1,True
+146,"What is the percentage of diamonds are white in color, 98%, 1.8%, or 0.1 %?",15,what,1,1,0,False
+147,"Which US measure is announced but not implemented?",8,which,1,1,0,False
+148,"Out of 3, how many adolescents in the U.S is not a victim of physical, sexual, emotional, or verbal abuse from a dating partner?",24,other,1,1,0,False
+149,"What percentage of teens feel violent music lyrics are a problem?",11,what,1,1,0,False
+150,"Which Vimeo channel about UX is mentioned fourth in the list?",11,which,1,1,0,False
+151,"How many minimum requirements mentioned in this infographic?",8,how,2,1,-1,False
+152,"What percentage of women didn't experienced stalking in the last year?",11,what,1,1,0,False
+153,"How much amount was announced for projects to address gaps in support for survivors?",14,how,1,1,0,False
+154,"What percent of women in the age group of 35-44 years are often abused by a partner according to the 2016 survey?",22,what,1,1,0,False
+155,"How many points under the heading sex for grades?",9,how,1,2,1,True
+156,"What is the percentage of drug abuse violations in the south and west region, taken together?",16,what,1,1,0,False
+157,"How many years mentioned in this infographic?",7,how,None,5,-6,False
+158,"What are the types of abuses other than economic & psychological?",11,what,2,5,3,False
+159,"What is the military budget of North Korea?",8,what,1,2,1,True
+160,"What are the three main types of dating abuse?",9,what,1,1,0,False
+161,"Which country has the highest domestic violence rate against women globally?",11,which,1,1,0,False
+162,"What is the no: of helicopters available with North Korea?",10,what,1,1,0,False
+163,"Which two countries must have spent nearly 35 million dollars for first world war?",14,which,1,1,0,False
+164,"What are the three forms of violence against women?",9,what,1,6,5,True
+165,"what ratio of the Australians were born overseas?",8,what,1,1,0,False
+166,"What happens in 60 seconds in Twitter?",7,what,2,2,0,False
+167,"How many people got killed on the Confederacy's side?",9,how,1,1,0,False
+168,"What percent of hate crimes were not race related?",9,what,1,1,0,False
+169,"How many sources are listed?",5,how,None,None,0,False
+170,"How many galaxies are there in the universe?",8,how,1,1,0,False
+171,"What % of girls say that they never feel comfortable using school latrines",13,what,1,7,6,True
+172,"Which are the top 2 best selling non violent video games of all time",14,which,1,1,0,False
+173,"What percentage of women did not report sexual violence to police in 2014-15 ?",14,what,1,1,0,False
+174,"How many sectors can be used for developing news partnerships to fight sexual violence?",14,how,1,1,0,False
+175,"What percentage of the population feel that video games do not affect the behavior of children?",16,what,1,1,0,False
+176,"Which gun is most common in 2012?",7,which,1,1,0,False
+177,"Which is the 4th point listed under 'typical abusive behaviors'?",10,which,1,3,2,True
+178,"Which country falls on the western side of Belgium and Germany?",11,which,8,8,0,False
+179,"World War 1 was fought between whom",7,other,1,1,0,False
+180,"Which Canadian cities have a rank between 50 and 60 for workplace violence?",13,which,1,1,0,False
+181,"What percent of Pinterest users are men?",7,what,2,1,-1,False
+182,"How many women are in this infographic?",7,how,None,None,0,False
+183,"What is the number of living U.S. World War II veterans in 1990?",13,what,1,1,0,False
+184,"Out of the total New Orleans population, how many are enslaved people in 1860?",14,other,1,1,0,False
+185,"When did Japan attack the U.S. at Pearl Harbor?",9,when,1,1,0,False
+186,"How many union soldiers were killed in the Battle of Chickamauga?",11,how,1,1,0,False
+187,"How many types of coffee grinding apparatus are shown in the infographic?",12,how,1,1,0,False
+188,"which age group is the most affected among reported cases?",10,which,2,3,1,False
+189,"In which year the LSU stadium renovated?",7,other,1,1,0,False
+190,"What is the difference in the average time spent on radio in 2018 and 2019?",15,what,1,5,4,True
+191,"What was the percent of change in company coal generation of RWE?",12,what,1,1,0,False
+192,"Which stream requires deductive reasoning, Inductive reasoning and problem solving skills - STEM or STEAM?",15,which,1,1,0,False
+193,"What is used to represent digital storage devices - circle, square or hexagon?",13,what,1,1,0,False
+194,"What is the growth rate % of investments from Europe?",10,what,1,1,0,False
+195,"What was voted by Nigeria, Pakistan and Qatar regarding gay rights - Yes or No?",15,what,1,1,0,False
+196,"What percentage of the Indian population is vaccinated against Polio in 2012?",12,what,1,1,0,False
+197,"When was the North Korean invasion",6,when,1,1,0,False
+198,"If taking a sample of ten drivers, how many did not make any changes in their driving habits for saving fuel?",21,other,1,1,0,False
+199,"What is the next step to be taken if there are no discussions to be held with ECMO Consultant?",19,what,1,1,0,False

@@ -1,0 +1,2 @@
+precision,recall@1,ndcg@5,bytes_per_doc
+bf16,0.0100,0.0248,15360
