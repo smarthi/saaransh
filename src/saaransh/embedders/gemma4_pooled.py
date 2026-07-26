@@ -15,7 +15,11 @@ API per the official model card, CONFIRMED on device (transformers 5.10.2, probe
   - image BEFORE text in the message content.
 
 The transformers bf16/fp16 path is verified end-to-end. The MLX (q8/q4) hidden-state
-path remains `# VERIFY`. Two known levers, not yet wired (next steps, not bugs):
+path is now wired against the mlx-vlm==0.6.7 source (return_hidden=True ->
+LanguageModelOutput.hidden_states[-1], captured pre-final-norm to match HF's
+recording convention per that source's own comment) but has NOT been run on real
+hardware yet — confirm with scripts/probe_gemma_mlx.py before trusting it in a sweep.
+Two known levers, not yet wired (next steps, not bugs):
   - visual_tokens (70/140/280/560/1120): currently only labels the run; the processor
     uses its default (280). Wiring the budget is a one-line probe on the processor.
   - mm_token_type_ids: marks image vs text positions -> enables image-only pooling and
@@ -154,14 +158,36 @@ class Gemma4PooledEmbedder:
         self.dim = int(getattr(self._mlx_model.config, "hidden_size", 0)) or 3840
 
     def _mlx_hidden(self, image, prompt: str) -> np.ndarray:
-        # >>> VERIFY ON DEVICE (probe_gemma.py --backend mlx) <<<
-        # mlx-vlm's generate path doesn't surface hidden states; call the underlying
-        # model forward and capture the last hidden state. Wire against your installed
-        # mlx-vlm version once the transformers baseline is working.
-        raise NotImplementedError(
-            "MLX hidden-state extraction must be wired against your mlx-vlm version. "
-            "Use backend='transformers' (bf16/fp16) for the quality baseline first."
+        # Wired against mlx-vlm==0.6.7 source (models/gemma4/language.py,
+        # models/gemma4_unified/gemma4_unified.py). NOT yet run on real hardware —
+        # confirm with scripts/probe_gemma_mlx.py before trusting these numbers.
+        #
+        # Model.__call__ (gemma4_unified.py) forwards return_hidden/capture_layer_ids
+        # kwargs down to LanguageModel.__call__, which appends the last decoder
+        # layer's output to a `hidden_sink` list BEFORE the final RMSNorm — the
+        # source comment there explicitly states this is done to match HF's
+        # `_can_record_outputs={"hidden_states": Gemma4TextDecoderLayer}` convention,
+        # i.e. it's designed to line up with the transformers backend's
+        # out.hidden_states[-1], not an arbitrary different capture point.
+        from mlx_vlm.utils import prepare_inputs
+
+        inputs = prepare_inputs(
+            self._mlx_processor,
+            images=[image] if image is not None else None,
+            prompts=[prompt],
         )
+        mask = inputs.pop("attention_mask", None)
+        out = self._mlx_model(mask=mask, return_hidden=True, **inputs)
+        hidden = out.hidden_states[-1]  # (1, T, H) mx.array, pre-final-norm
+        import mlx.core as mx
+
+        if mask is not None:
+            m = mask[0].astype(hidden.dtype)
+            pooled = (hidden[0] * m[:, None]).sum(axis=0) / mx.maximum(m.sum(), 1)
+        else:
+            pooled = hidden[0].mean(axis=0)
+        pooled = pooled.astype(mx.float32)
+        return np.array(pooled, dtype=np.float32)
 
     def _mlx_embed_images(self, images: list) -> np.ndarray:
         return np.stack([self._mlx_hidden(im, _IMG_PROMPT) for im in images]).astype("float32")
